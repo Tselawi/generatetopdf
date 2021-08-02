@@ -1,0 +1,244 @@
+/* front-page */
+@page {
+  margin: 0; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif; }
+
+.content {
+  padding: 1px;
+  text-align: center;
+  background-color: #F92326;
+  width: 100%;
+  height: 100%; }
+
+.title {
+  font-family: sans-serif;
+  /* padding-top: 15px; */
+  color: #fff;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+.text {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 2rem;
+  margin-top: 20px; }
+
+.footer-content {
+  padding-top: 105%;
+  text-align: center;
+  background-color: #F92326;
+  width: 100%;
+  height: 100%; }
+
+.text-footer {
+  font-size: 1.4rem;
+  color: #fff;
+  padding-top: -10px; }
+
+/* second-page */
+.cover-bg {
+  position: relative;
+  z-index: -1; }
+
+.cover-text {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  text-align: center;
+  width: 100%; }
+
+.title-header {
+  padding: 40px 10px 30px 10px;
+  color: #F82326;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+.title-content {
+  font-size: 2.7rem;
+  color: #000;
+  padding: 20px;
+  text-transform: uppercase; }
+
+.newsletter {
+  position: absolute;
+  top: 4%;
+  left: 25px;
+  width: 35%;
+  z-index: 1; }
+
+.cover-text1 {
+  position: absolute;
+  z-index: 1;
+  top: 6%;
+  text-align: center;
+  width: 100%; }
+
+.address-container {
+  position: absolute;
+  z-index: 1;
+  top: 22%;
+  left: 25px;
+  font-size: .9rem; }
+
+.address-content {
+  padding-bottom: 5px;
+  padding-top: -18px; }
+
+.red-line {
+  height: 1px;
+  width: 90%;
+  color: #F82326;
+  text-align: start;
+  padding-top: 5px; }
+
+.bg-container {
+  position: relative;
+  z-index: -1; }
+
+.page-number-left {
+  position: absolute;
+  z-index: 1;
+  top: -15px;
+  left: 15px;
+  color: #fff;
+  font-size: 1.4rem; }
+
+.page-number-lefttwo {
+  position: absolute;
+  z-index: 1;
+  top: -15px;
+  left: 8px;
+  color: #fff;
+  font-size: 1.3rem;
+  width: 15%; }
+
+.profile-pic {
+  position: absolute;
+  top: 15%;
+  margin: 0;
+  padding: 0;
+  left: 30%;
+  width: 150px;
+  z-index: 2; }
+
+.img-border {
+  position: absolute;
+  width: 100px;
+  z-index: 3;
+  left: 26%;
+  top: 27%; }
+
+.img-broder-b {
+  filter: grayscale(1);
+  filter: saturate(2.2); }
+
+.profile-details {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  z-index: 3;
+  padding: 30px; }
+
+.profile-text {
+  font-size: 1.1rem;
+  padding-bottom: 20px; }
+  .profile-text .tgray {
+    color: #919396;
+    font-size: .9rem; }
+
+.sign {
+  position: absolute;
+  top: 80%;
+  right: 15%;
+  z-index: 3; }
+
+.perso-info-bg {
+  position: relative;
+  z-index: -1; }
+
+.page-number-right {
+  position: absolute;
+  z-index: 1;
+  top: -15px;
+  right: 20px;
+  color: #fff;
+  font-size: 1.4rem; }
+
+.page-number-righttwo {
+  position: absolute;
+  z-index: 1;
+  top: -15px;
+  right: -8px;
+  color: #fff;
+  font-size: 1.3rem;
+  width: 15%; }
+
+.SVI-heading {
+  position: absolute;
+  z-index: 1;
+  top: 8%;
+  left: 10%; }
+
+.profile-text2 {
+  font-size: 1rem;
+  padding-bottom: 12px; }
+  .profile-text2 .tgray2 {
+    color: #919396;
+    font-size: .9rem; }
+
+.gender {
+  position: absolute;
+  z-index: 1;
+  top: 26%;
+  right: 22%; }
+
+.header-info {
+  position: absolute;
+  z-index: 1;
+  top: 12%;
+  left: 15%; }
+
+.title-add {
+  text-transform: uppercase;
+  font-size: 1.5rem; }
+
+.SVI-additonal-info {
+  position: absolute;
+  z-index: 1;
+  top: 25%;
+  left: 10%; }
+
+.profile-text3 {
+  padding-bottom: 20px;
+  font-size: 1.1rem; }
+  .profile-text3 .tgray2 {
+    color: #919396;
+    font-size: .9rem; }
+
+.header-project {
+  position: absolute;
+  z-index: 3;
+  top: 13%;
+  left: 20%; }
+
+.title-pro {
+  text-transform: uppercase;
+  font-size: 1.5rem; }
+
+.pro-info {
+  position: absolute;
+  z-index: 3;
+  top: 24%;
+  left: 11%; }
+
+.pro-sign {
+  position: absolute;
+  bottom: 10%;
+  right: 15%;
+  z-index: 3; }
+
+/*# sourceMappingURL=style.css.map */

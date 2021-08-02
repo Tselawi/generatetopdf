@@ -1,0 +1,74 @@
+.bg-container {
+    position: relative;
+    z-index: -1;
+}
+
+.page-number-left {
+    position: absolute;
+    z-index: 1;
+    top: -15px;
+    left: 15px;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.page-number-lefttwo {
+    position: absolute;
+    z-index: 1;
+    top: -15px;
+    left: 8px;
+    color: #fff;
+    font-size: 1.3rem;
+    width: 15%;
+}
+
+.profile-pic {
+    position: absolute;
+    top: 15%;
+    margin: 0;
+    padding: 0;
+    left: 30%;
+    width: 150px;
+    z-index: 2;
+}
+
+.img-border {
+    position: absolute;
+    width: 100px;
+    z-index: 3;
+    left: 26%;
+    top: 27%;
+
+}
+
+.img-broder-b {
+    filter: grayscale(1);
+    filter: saturate(2.2);
+}
+
+.profile-details {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    z-index: 3;
+    padding: 30px;
+
+
+}
+
+.profile-text {
+    font-size: 1.1rem;
+    padding-bottom: 20px;
+
+    .tgray {
+        color: $text-profile;
+        font-size: .9rem;
+    }
+}
+
+.sign {
+    position: absolute;
+    top: 80%;
+    right: 15%;
+    z-index: 3;
+}

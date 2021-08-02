@@ -1,0 +1,48 @@
+.perso-info-bg {
+    position: relative;
+    z-index: -1;
+}
+
+.page-number-right {
+    position: absolute;
+    z-index: 1;
+    top: -15px;
+    right: 20px;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.page-number-righttwo {
+    position: absolute;
+    z-index: 1;
+    top: -15px;
+    right: -8px;
+    color: #fff;
+    font-size: 1.3rem;
+    width: 15%;
+}
+
+
+.SVI-heading {
+    position: absolute;
+    z-index: 1;
+    top: 8%;
+    left: 10%;
+}
+
+.profile-text2 {
+    font-size: 1rem;
+    padding-bottom: 12px;
+
+    .tgray2 {
+        color: $text-profile;
+        font-size: .9rem;
+    }
+}
+
+.gender {
+    position: absolute;
+    z-index: 1;
+    top: 26%;
+    right: 22%;
+}
