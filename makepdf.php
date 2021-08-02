@@ -454,5 +454,5 @@ $mpdf->showImageErrors = true;
 $mpdf->WriteHTML($data);
 
 // output to browser
-$mpdf->Output();
+$mpdf->Output('filepdf.pdf', 'D');
 
