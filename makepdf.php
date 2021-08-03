@@ -450,5 +450,5 @@ $data = '
 $mpdf->WriteHTML($data);
 
 // output to browser
-$mpdf->Output('myfile.pdf', 'D');
+$mpdf->Output();
 
