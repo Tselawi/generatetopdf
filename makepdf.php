@@ -46,7 +46,7 @@ $data = '
      </div>
         <!-- ########################## logo page  ########################## -->
             <div>
-            <img src="/images/04.png" style="width:100%;" alt="SVI">
+            <img src="/Applications/XAMPP/xamppfiles/htdocs/pdfapp/images/04.png" style="width:100%;" alt="SVI">
             </div>
         <!-- ########################## second page ########################## -->
             <div class="cover-bg">
