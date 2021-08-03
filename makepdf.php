@@ -1,9 +1,9 @@
 <?php
-
+try{
 require_once __DIR__ . '/vendor/autoload.php';
 
 
-// Grab the variables 
+// Grab the variables
 // if(isset($_POST['submit'])){
     $fname = $_POST['fname'];
     $lname = $_POST['lname'];
@@ -33,12 +33,12 @@ $data = '
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-    
+
     <!-- ########################## front page ########################## -->
     <div class="container">
             <div class="content">
                 <h1 class="title">Volunteer Passport</h1>
-                    <img src="/Applications/XAMPP/xamppfiles/htdocs/pdfapp/images/big_logo.png" width="40%" alt="big-logo"/>
+                    <img src="images/big_logo.png" width="40%" alt="big-logo"/>
                         <div class="text-container">
                             <p class="text">Service <br>Volontaire<br> International</p>
                         </div>
@@ -46,11 +46,11 @@ $data = '
      </div>
         <!-- ########################## logo page  ########################## -->
             <div>
-            <img src="/Applications/XAMPP/xamppfiles/htdocs/pdfapp/images/04.png" style="width:100%;" alt="SVI">
+            <img src="images/04.png" style="width:100%;" alt="SVI">
             </div>
         <!-- ########################## second page ########################## -->
             <div class="cover-bg">
-                <img src="/Applications/XAMPP/xamppfiles/htdocs/pdfapp/images/03.png" alt="SVI">
+                <img src="images/03.png" alt="SVI">
             </div>
             <div class="cover-text">
                 <p class="title-header">Service Volontaire international</p>
@@ -59,16 +59,16 @@ $data = '
         <!-- ########################## profile page one ##########################-->
 
                     <div class="bg-container">
-                        <img src="/Applications/XAMPP/xamppfiles/htdocs/pdfapp/images/01.png"  alt="SVI">
+                        <img src="images/01.png"  alt="SVI">
                     </div>
                     <div class="page-number-left">
                         <h2>2</h2>
                     </div>
                     <div class="profile-pic">
-                            <img src="/Applications/XAMPP/xamppfiles/htdocs/pdfapp/images/06.png" alt="personal photo">
+                            <img src="images/06.png" alt="personal photo">
                     </div>
                     <div class="img-border">
-                        <img src="/Applications/XAMPP/xamppfiles/htdocs/pdfapp/images/05.png" class="img-broder-b" alt="border img">
+                        <img src="images/05.png" class="img-broder-b" alt="border img">
                     </div>
                     <div class="profile-details">
                         <p class="profile-text">First Name: <u>' . $fname . '</u><br><sub class="tgray">(prènom)</sub></p>
@@ -78,11 +78,11 @@ $data = '
                     <div class="sign">
                         <p class="profile-text">Signature____________<br><sub class="tgray">(signature)</sub></p>
                     </div>
-                
+
                 <!-- ########################## profile page two ########################## -->
 
                 <div class="perso-info-bg">
-                    <img src="/Applications/XAMPP/xamppfiles/htdocs/pdfapp/images/02.png" alt="">
+                    <img src="images/02.png" alt="">
                 </div>
                 <div class="page-number-right">
                         <h2>3</h2>
@@ -103,7 +103,7 @@ $data = '
                 </div>
                 <!-- ########################## Additional information ########################## -->
                 <div class="bg-container">
-                    <img src="/Applications/XAMPP/xamppfiles/htdocs/pdfapp/images/01.png"  alt="SVI">
+                    <img src="images/01.png"  alt="SVI">
                 </div>
                 <div class="page-number-left">
                         <h2>4</h2>
@@ -115,12 +115,12 @@ $data = '
                     <p class="profile-text3">Insurance number<br><sub class="tgray2">(numero d\'assurance)</sub></p>
                     <p class="profile-text3">Health problems<br><sub class="tgray2">(problemes de sante)</sub></p>
                     <p class="profile-text3">Extra information<br><sub class="tgray2">(informations supplementaires)</sub></p>
-                </div> 
+                </div>
 
             <!-- ########################## Project information right ########################## -->
 
             <div class="perso-info-bg">
-                    <img src="/Applications/XAMPP/xamppfiles/htdocs/pdfapp/images/02.png" alt="">
+                    <img src="images/02.png" alt="">
                 </div>
                 <div class="page-number-right">
                         <h2>5</h2>
@@ -134,7 +134,7 @@ $data = '
                     <p class="profile-text2">Location<br><sub class="tgray2">(localisation)</sub></p>
                     <p class="profile-text2">Code<br><sub class="tgray2">(code)</sub></p>
                     <p class="profile-text2">Type<br><sub class="tgray2">(type)</sub></p>
-                </div> 
+                </div>
                 <div class="pro-sign">
                         <p class="profile-text2">Project Manager (name)<br><sub class="tgray2">(chef de projet (nom) )</sub><br>________________________</p>
                         <p class="profile-text2">Signature______________<br><sub class="tgray2">(signature)</sub></p>
@@ -142,7 +142,7 @@ $data = '
 
                 <!-- ########################## Project information left ########################## -->
                 <div class="bg-container">
-                    <img src="/Applications/XAMPP/xamppfiles/htdocs/pdfapp/images/01.png"  alt="SVI">
+                    <img src="images/01.png"  alt="SVI">
                 </div>
                 <div class="page-number-left">
                         <h2>6</h2>
@@ -156,7 +156,7 @@ $data = '
                     <p class="profile-text2">Location<br><sub class="tgray2">(localisation)</sub></p>
                     <p class="profile-text2">Code<br><sub class="tgray2">(code)</sub></p>
                     <p class="profile-text2">Type<br><sub class="tgray2">(type)</sub></p>
-                </div> 
+                </div>
                 <div class="pro-sign">
                         <p class="profile-text2">Project Manager (name)<br><sub class="tgray2">(chef de projet (nom) )</sub><br>________________________</p>
                         <p class="profile-text2">Signature______________<br><sub class="tgray2">(signature)</sub></p>
@@ -164,7 +164,7 @@ $data = '
                 <!-- ########################## Project information right ########################## -->
 
             <div class="perso-info-bg">
-                    <img src="/Applications/XAMPP/xamppfiles/htdocs/pdfapp/images/02.png" alt="">
+                    <img src="images/02.png" alt="">
                 </div>
                 <div class="page-number-right">
                         <h2>7</h2>
@@ -178,14 +178,14 @@ $data = '
                     <p class="profile-text2">Location<br><sub class="tgray2">(localisation)</sub></p>
                     <p class="profile-text2">Code<br><sub class="tgray2">(code)</sub></p>
                     <p class="profile-text2">Type<br><sub class="tgray2">(type)</sub></p>
-                </div> 
+                </div>
                 <div class="pro-sign">
                         <p class="profile-text2">Project Manager (name)<br><sub class="tgray2">(chef de projet (nom) )</sub><br>________________________</p>
                         <p class="profile-text2">Signature______________<br><sub class="tgray2">(signature)</sub></p>
                 </div>
                  <!-- ########################## Project information left ########################## -->
                  <div class="bg-container">
-                    <img src="/Applications/XAMPP/xamppfiles/htdocs/pdfapp/images/01.png"  alt="SVI">
+                    <img src="images/01.png"  alt="SVI">
                 </div>
                 <div class="page-number-left">
                         <h2>8</h2>
@@ -199,7 +199,7 @@ $data = '
                     <p class="profile-text2">Location<br><sub class="tgray2">(localisation)</sub></p>
                     <p class="profile-text2">Code<br><sub class="tgray2">(code)</sub></p>
                     <p class="profile-text2">Type<br><sub class="tgray2">(type)</sub></p>
-                </div> 
+                </div>
                 <div class="pro-sign">
                         <p class="profile-text2">Project Manager (name)<br><sub class="tgray2">(chef de projet (nom) )</sub><br>________________________</p>
                         <p class="profile-text2">Signature______________<br><sub class="tgray2">(signature)</sub></p>
@@ -207,7 +207,7 @@ $data = '
                 <!-- ########################## Project information right ########################## -->
 
             <div class="perso-info-bg">
-                    <img src="/Applications/XAMPP/xamppfiles/htdocs/pdfapp/images/02.png" alt="">
+                    <img src="images/02.png" alt="">
                 </div>
                 <div class="page-number-right">
                         <h2>9</h2>
@@ -221,14 +221,14 @@ $data = '
                     <p class="profile-text2">Location<br><sub class="tgray2">(localisation)</sub></p>
                     <p class="profile-text2">Code<br><sub class="tgray2">(code)</sub></p>
                     <p class="profile-text2">Type<br><sub class="tgray2">(type)</sub></p>
-                </div> 
+                </div>
                 <div class="pro-sign">
                         <p class="profile-text2">Project Manager (name)<br><sub class="tgray2">(chef de projet (nom) )</sub><br>________________________</p>
                         <p class="profile-text2">Signature______________<br><sub class="tgray2">(signature)</sub></p>
                 </div>
                  <!-- ########################## Project information left ########################## -->
                  <div class="bg-container">
-                    <img src="/Applications/XAMPP/xamppfiles/htdocs/pdfapp/images/01.png"  alt="SVI">
+                    <img src="images/01.png"  alt="SVI">
                 </div>
                 <div class="page-number-lefttwo">
                         <h2>10</h2>
@@ -242,7 +242,7 @@ $data = '
                     <p class="profile-text2">Location<br><sub class="tgray2">(localisation)</sub></p>
                     <p class="profile-text2">Code<br><sub class="tgray2">(code)</sub></p>
                     <p class="profile-text2">Type<br><sub class="tgray2">(type)</sub></p>
-                </div> 
+                </div>
                 <div class="pro-sign">
                         <p class="profile-text2">Project Manager (name)<br><sub class="tgray2">(chef de projet (nom) )</sub><br>________________________</p>
                         <p class="profile-text2">Signature______________<br><sub class="tgray2">(signature)</sub></p>
@@ -250,7 +250,7 @@ $data = '
                 <!-- ########################## Project information right ########################## -->
 
             <div class="perso-info-bg">
-                    <img src="/Applications/XAMPP/xamppfiles/htdocs/pdfapp/images/02.png" alt="">
+                    <img src="images/02.png" alt="">
                 </div>
                 <div class="page-number-righttwo">
                         <h2>11</h2>
@@ -264,14 +264,14 @@ $data = '
                     <p class="profile-text2">Location<br><sub class="tgray2">(localisation)</sub></p>
                     <p class="profile-text2">Code<br><sub class="tgray2">(code)</sub></p>
                     <p class="profile-text2">Type<br><sub class="tgray2">(type)</sub></p>
-                </div> 
+                </div>
                 <div class="pro-sign">
                         <p class="profile-text2">Project Manager (name)<br><sub class="tgray2">(chef de projet (nom) )</sub><br>________________________</p>
                         <p class="profile-text2">Signature______________<br><sub class="tgray2">(signature)</sub></p>
                 </div>
                  <!-- ########################## Project information left ########################## -->
                  <div class="bg-container">
-                    <img src="/Applications/XAMPP/xamppfiles/htdocs/pdfapp/images/01.png"  alt="SVI">
+                    <img src="images/01.png"  alt="SVI">
                 </div>
                 <div class="page-number-lefttwo">
                         <h2>12</h2>
@@ -285,7 +285,7 @@ $data = '
                     <p class="profile-text2">Location<br><sub class="tgray2">(localisation)</sub></p>
                     <p class="profile-text2">Code<br><sub class="tgray2">(code)</sub></p>
                     <p class="profile-text2">Type<br><sub class="tgray2">(type)</sub></p>
-                </div> 
+                </div>
                 <div class="pro-sign">
                         <p class="profile-text2">Project Manager (name)<br><sub class="tgray2">(chef de projet (nom) )</sub><br>________________________</p>
                         <p class="profile-text2">Signature______________<br><sub class="tgray2">(signature)</sub></p>
@@ -293,7 +293,7 @@ $data = '
                 <!-- ########################## Project information right ########################## -->
 
             <div class="perso-info-bg">
-                    <img src="/Applications/XAMPP/xamppfiles/htdocs/pdfapp/images/02.png" alt="">
+                    <img src="images/02.png" alt="">
                 </div>
                 <div class="page-number-righttwo">
                         <h2>13</h2>
@@ -307,14 +307,14 @@ $data = '
                     <p class="profile-text2">Location<br><sub class="tgray2">(localisation)</sub></p>
                     <p class="profile-text2">Code<br><sub class="tgray2">(code)</sub></p>
                     <p class="profile-text2">Type<br><sub class="tgray2">(type)</sub></p>
-                </div> 
+                </div>
                 <div class="pro-sign">
                         <p class="profile-text2">Project Manager (name)<br><sub class="tgray2">(chef de projet (nom) )</sub><br>________________________</p>
                         <p class="profile-text2">Signature______________<br><sub class="tgray2">(signature)</sub></p>
                 </div>
                  <!-- ########################## Project information left ########################## -->
                  <div class="bg-container">
-                    <img src="/Applications/XAMPP/xamppfiles/htdocs/pdfapp/images/01.png"  alt="SVI">
+                    <img src="images/01.png"  alt="SVI">
                 </div>
                 <div class="page-number-lefttwo">
                         <h2>14</h2>
@@ -328,7 +328,7 @@ $data = '
                     <p class="profile-text2">Location<br><sub class="tgray2">(localisation)</sub></p>
                     <p class="profile-text2">Code<br><sub class="tgray2">(code)</sub></p>
                     <p class="profile-text2">Type<br><sub class="tgray2">(type)</sub></p>
-                </div> 
+                </div>
                 <div class="pro-sign">
                         <p class="profile-text2">Project Manager (name)<br><sub class="tgray2">(chef de projet (nom) )</sub><br>________________________</p>
                         <p class="profile-text2">Signature______________<br><sub class="tgray2">(signature)</sub></p>
@@ -336,7 +336,7 @@ $data = '
                 <!-- ########################## Project information right ########################## -->
 
             <div class="perso-info-bg">
-                    <img src="/Applications/XAMPP/xamppfiles/htdocs/pdfapp/images/02.png" alt="">
+                    <img src="images/02.png" alt="">
                 </div>
                 <div class="page-number-righttwo">
                         <h2>15</h2>
@@ -350,7 +350,7 @@ $data = '
                     <p class="profile-text2">Location<br><sub class="tgray2">(localisation)</sub></p>
                     <p class="profile-text2">Code<br><sub class="tgray2">(code)</sub></p>
                     <p class="profile-text2">Type<br><sub class="tgray2">(type)</sub></p>
-                </div> 
+                </div>
                 <div class="pro-sign">
                         <p class="profile-text2">Project Manager (name)<br><sub class="tgray2">(chef de projet (nom) )</sub><br>________________________</p>
                         <p class="profile-text2">Signature______________<br><sub class="tgray2">(signature)</sub></p>
@@ -358,7 +358,7 @@ $data = '
 
                 <!-- ########################## Project information left ########################## -->
                 <div class="bg-container">
-                    <img src="/Applications/XAMPP/xamppfiles/htdocs/pdfapp/images/01.png"  alt="SVI">
+                    <img src="images/01.png"  alt="SVI">
                 </div>
                 <div class="page-number-lefttwo">
                         <h2>16</h2>
@@ -366,14 +366,14 @@ $data = '
                   <!-- ########################## Project information right ########################## -->
 
             <div class="perso-info-bg">
-                    <img src="/Applications/XAMPP/xamppfiles/htdocs/pdfapp/images/02.png" alt="">
+                    <img src="images/02.png" alt="">
                 </div>
                 <div class="page-number-righttwo">
                         <h2>17</h2>
                 </div>
                 <!-- ########################## Project information left ########################## -->
                 <div class="bg-container">
-                    <img src="/Applications/XAMPP/xamppfiles/htdocs/pdfapp/images/01.png"  alt="SVI">
+                    <img src="images/01.png"  alt="SVI">
                 </div>
                 <div class="page-number-lefttwo">
                         <h2>18</h2>
@@ -381,7 +381,7 @@ $data = '
                   <!-- ########################## Project information right ########################## -->
 
             <div class="perso-info-bg">
-                    <img src="/Applications/XAMPP/xamppfiles/htdocs/pdfapp/images/02.png" alt="">
+                    <img src="images/02.png" alt="">
                 </div>
                 <div class="page-number-righttwo">
                         <h2>19</h2>
@@ -389,10 +389,10 @@ $data = '
 
                 <!-- ########################## address page ########################## -->
             <div class="cover-bg">
-                <img src="/Applications/XAMPP/xamppfiles/htdocs/pdfapp/images/03.png" alt="SVI">
+                <img src="images/03.png" alt="SVI">
             </div>
             <div class="newsletter">
-                <img src="/Applications/XAMPP/xamppfiles/htdocs/pdfapp/images/logo_newsletter.png" alt="newsletter SVI">
+                <img src="images/logo_newsletter.png" alt="newsletter SVI">
             </div>
             <div class="cover-text1">
                 <p class="title-header">Service Volontaire international</p>
@@ -433,22 +433,25 @@ $data = '
             </div>
                  <!-- ########################## logo page  ########################## -->
                  <div>
-                    <img src="/Applications/XAMPP/xamppfiles/htdocs/pdfapp/images/04.png" style="width:100%;" alt="SVI">
+                    <img src="images/04.png" style="width:100%;" alt="SVI">
                 </div>
                 <!-- ########################## last page ########################## -->
             <div class="footer-content">
-                    <img src="/Applications/XAMPP/xamppfiles/htdocs/pdfapp/images/logo_newsletter.png" width="46%" alt="big-logo"/>
+                    <img src="images/logo_newsletter.png" width="46%" alt="big-logo"/>
                         <div class="footer-container">
                             <p class="text-footer">+32 2 888 67 13</p>
                         </div>
             </div>
-            
+
 </body>
 ';
 
-$mpdf->showImageErrors = true;
+// $mpdf->showImageErrors = true;
 $mpdf->WriteHTML($data);
 
 // output to browser
 $mpdf->Output();
-
+} catch(\Mpdf\MpdfException $e){
+    $e->getMessage();
+}
+?>
