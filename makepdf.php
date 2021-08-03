@@ -26,13 +26,11 @@ $mpdf = new \Mpdf\Mpdf(['mode' => 'utf-8', 'format' => [105, 148]]);
 // book mark of pdf
 $mpdf->Bookmark('Start of the document');
 
-// $image_source = imagecreatefrompng('.assets/images/logo.png');
-// var_dump($image_source);
 
 // $data = file_get_contents('content.php');
 $data = '
 <head>
-    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
     
@@ -446,13 +444,11 @@ $data = '
             </div>
             
 </body>
-
-
 ';
 
-$mpdf->showImageErrors = true;
+// $mpdf->showImageErrors = true;
 $mpdf->WriteHTML($data);
 
 // output to browser
-$mpdf->Output('filepdf.pdf', 'D');
+$mpdf->Output('myfile.pdf', 'D');
 
