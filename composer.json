@@ -1,8 +1,5 @@
 {
   "require": {
     "mpdf/mpdf": "^8.0"
-  },
-  "require": {
-    "silex/silex": "~1.1"
   }
 }
