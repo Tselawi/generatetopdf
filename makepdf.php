@@ -32,7 +32,7 @@ $mpdf->Bookmark('Start of the document');
 // $data = file_get_contents('content.php');
 $data = '
 <head>
-    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="/src/css/style.css">
 </head>
 <body>
     

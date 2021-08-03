@@ -11,7 +11,7 @@
 
     <div class="container mt-5">
 
-        <form class="offset-md-3 col-md-6" method="post" action="/makepdf.php">
+        <form class="offset-md-3 col-md-6" method="post" action="makepdf.php">
 
         <h1>Create your volonteer passport</h1>
             <p>Fill out the details below and the PDF will download.</p>
