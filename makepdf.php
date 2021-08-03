@@ -446,7 +446,7 @@ $data = '
 </body>
 ';
 
-// $mpdf->showImageErrors = true;
+$mpdf->showImageErrors = true;
 $mpdf->WriteHTML($data);
 
 // output to browser
