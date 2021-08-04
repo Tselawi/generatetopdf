@@ -1,5 +1,5 @@
 <?php
-try{
+
 require_once __DIR__ . '/vendor/autoload.php';
 
 
@@ -19,7 +19,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 
 // }
-
+try{
 // create new PDF instance
 $mpdf = new \Mpdf\Mpdf(['mode' => 'utf-8', 'format' => [105, 148]]);
 
@@ -450,7 +450,7 @@ $data = '
 $mpdf->WriteHTML($data);
 
 // output to browser
-$mpdf->Output();
+$mpdf->Output('myfile.pdf', 'D');
 } catch(\Mpdf\MpdfException $e){
     $e->getMessage();
 }
