@@ -34,6 +34,9 @@
             <div class="mb-2">
                 <input type="date" name="date" placeholder="Birth date" class="form-control">
             </div>
+            <!-- <div class="mb-2">
+                <input type="file" name="fileToUpload" id="fileToUpload">
+            </div> -->
             <div class="mb-2">
                 <input type="text" name="nationality" placeholder="Nationality" class="form-control">
             </div>
