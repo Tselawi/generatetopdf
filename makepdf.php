@@ -3,23 +3,28 @@
 require_once __DIR__ . '/vendor/autoload.php';
 
 
-// Grab the variables 
-// if(isset($_POST['submit'])){
-    $fname = $_POST['fname'];
-    $lname = $_POST['lname'];
-    $gender = $_POST['gender'];
-    $member = $_POST['member'];
-    $date = $_POST['date'];
-    $nationality = $_POST['nationality'];
-    $adress = $_POST['adress'];
-    $city = $_POST['city'];
-    $country = $_POST['country'];
-    $phone = $_POST['phone'];
-    $emergency =$_POST['emergency'];
+// Grab the variables
+if (isset($_POST['submit'])) {
+    $fname = val($_POST['fname']);
+    $lname = val($_POST['lname']);
+    $gender = val($_POST['gender']);
+    $member = val($_POST['member']);
+    $date = val($_POST['date']);
+    $nationality = val($_POST['nationality']);
+    $adress = val($_POST['adress']);
+    $city = val($_POST['city']);
+    $country = val($_POST['country']);
+    $phone = val($_POST['phone']);
+    $emergency = val($_POST['emergency']);
+}
 
-
-// }
-
+function val($data)
+{
+    $data = trim($data); // remove unnessary spaces
+    $data = stripcslashes($data); // remove unnessary back slashes
+    $data = htmlspecialchars($data); // secruity data 
+    return $data;
+}
 // create new PDF instance
 $mpdf = new \Mpdf\Mpdf(['mode' => 'utf-8', 'format' => [105, 148]]);
 
@@ -92,7 +97,7 @@ $data = '
                     <p class="profile-text2">Code of the issuing organization:SVI<br><sub class="tgray2">(code de l\'organisme emetteur)</sub></p>
                     <p class="profile-text2">Birth date: <u>' . $date . '</u><br><sub class="tgray2">(date de naissance)</sub></p>
                     <p class="profile-text2">Nationality: <u>' . $nationality . '</u><br><sub class="tgray2">(nationalite)</sub></p>
-                    <p class="profile-text2">Current address: <u>'. $adress . '</u><br><sub class="tgray2">(addresse actuelle)</sub></p>
+                    <p class="profile-text2">Current address: <u>' . $adress . '</u><br><sub class="tgray2">(addresse actuelle)</sub></p>
                     <p class="profile-text2">City: <u>' . $city . '</u><br><sub class="tgray2">(ville)</sub></p>
                     <p class="profile-text2">Country:<u>' . $country . '</u><br><sub class="tgray2">(pays)</sub></p>
                     <p class="profile-text2">Mobile phone: <u>' . $phone . '</u><br><sub class="tgray2">(numero de portable)</sub></p>
@@ -451,4 +456,3 @@ $mpdf->WriteHTML($data);
 
 // output to browser
 $mpdf->Output('myfile.pdf', 'D');
-
