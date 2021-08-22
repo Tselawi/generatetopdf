@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Generate the mPDF</title>
 </head>
+
 <body>
 
     <div class="container mt-5">
 
         <form class="offset-md-3 col-md-6" method="post" action="makepdf.php">
 
-        <h1>Create your volonteer passport</h1>
+            <h1>Create your volonteer passport</h1>
             <p>Fill out the details below and the PDF will download.</p>
             <div class="row mb-2">
                 <div class="col-md-6">
@@ -25,7 +27,7 @@
             </div>
             <div class="row mb-2">
                 <div class="col-md-6">
-                        <input type="text" name="gender" placeholder="Sex" class="form-control">
+                    <input type="text" name="gender" placeholder="Sex" class="form-control">
                 </div>
                 <div class=col-md-6>
                     <input type="text" name="member" placeholder="membership number" class="form-control">
@@ -60,11 +62,12 @@
                 </div>
             </div>
 
-            <button type="submit" class="btn btn-success btn-lg form-control">Create PDF</button>
+            <button type="submit" name="submit" class="btn btn-success btn-lg form-control">Create PDF</button>
 
 
         </form>
     </div>
-    
+
 </body>
+
 </html>
