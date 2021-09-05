@@ -33,15 +33,23 @@ if (isset($_POST['submit'])) {
         $em = "Enter the country code";
         header("Location: index.php?error=$em");
     }
-    $phone = str_replace([' ', '.', '-', '(', ')'], '', $phone);
 
+
+    // number validation
     if (!is_numeric($emergency) || !is_numeric($member)) {
         $em = "Only numbers are allowed.";
         header("Location: index.php?error=$em");
     }
 
+    // Birth date validation
+
     if (empty($date)) {
         $em = "Enter Your Birth Date";
+        header(("Location: index.php?error=$em"));
+    }
+    $strSystemMaxDate = (date('Y') - 15) . '/' . date('m/d');
+    if (strtotime($date) > strtotime($strSystemMaxDate)) {
+        $em = "Minimum age is 15 years.";
         header(("Location: index.php?error=$em"));
     }
 
@@ -87,7 +95,7 @@ function val($data)
 {
     $data = trim($data); // remove unnessary spaces
     $data = stripcslashes($data); // remove unnessary back slashes
-    $data = htmlspecialchars($data); // secruity data 
+    $data = htmlspecialchars($data); // secruity data
     return $data;
 }
 try {
