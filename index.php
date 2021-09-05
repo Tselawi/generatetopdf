@@ -12,35 +12,46 @@
 <body>
 
     <div class="container mt-5">
+        <?php if (isset($_GET['error'])) : ?>
+            <p class="alert alert-danger"><?= $_GET['error']; ?></p>
+        <?php endif; ?>
 
-        <form class="offset-md-3 col-md-6" method="post" action="makepdf.php">
+        <form class="offset-md-3 col-md-6" method="post" action="makepdf.php" enctype="multipart/form-data">
 
             <h1>Create your volonteer passport</h1>
             <p>Fill out the details below and the PDF will download.</p>
             <div class="row mb-2">
                 <div class="col-md-6">
-                    <input type="text" name="fname" placeholder="First Name" class="form-control">
+                    <input type="text" name="fname" placeholder="First Name" class="form-control" required>
                 </div>
                 <div class="col-md-6">
-                    <input type="text" name="lname" placeholder="Last name" class="form-control">
+                    <input type="text" name="lname" placeholder="Last name" class="form-control" required>
                 </div>
             </div>
             <div class="row mb-2">
                 <div class="col-md-6">
-                    <input type="text" name="gender" placeholder="Sex" class="form-control">
+                    <select class="form-select" name="gender" required>
+                        <option selected>Choose...</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Others">Other</option>
+                    </select>
                 </div>
                 <div class=col-md-6>
-                    <input type="text" name="member" placeholder="membership number" class="form-control">
+                    <input type="text" name="member" placeholder="membership number" class="form-control" required>
                 </div>
             </div>
             <div class="mb-2">
                 <input type="date" name="date" placeholder="Birth date" class="form-control">
             </div>
             <div class="mb-2">
+                <input type="file" name="fileToUpload" id="fileToUpload" class="form-control">
+            </div>
+            <div class="mb-2">
                 <input type="text" name="nationality" placeholder="Nationality" class="form-control">
             </div>
             <div class="mb-2">
-                <input type="text" name="adress" placeholder="Current address" class="form-control">
+                <input type="text" name="address" placeholder="Current address" class="form-control">
             </div>
             <div class="row mb-2">
                 <div class="col-md-6">
@@ -52,7 +63,7 @@
             </div>
             <div class="row mb-2">
                 <div class="col-md-6">
-                    <input type="phone" name="phone" placeholder="Mobile phone" class="form-control">
+                    <input type="phone" name="phone" placeholder="Mobile phone +32" class="form-control">
                 </div>
                 <div class="col-md-6">
                     <input type="text" name="emergency" placeholder="Emergency number" class="form-control">
