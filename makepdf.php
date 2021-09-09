@@ -529,7 +529,7 @@ try {
     $mpdf->WriteHTML($data);
 
     // output to browser
-    $mpdf->Output('myfile.pdf', 'D');
+    $mpdf->Output("$fname-$lname" . '.pdf', 'D');
     // $mpdf->Output();
 } catch (\Mpdf\MpdfException $e) {
     $e->getMessage();
