@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+Genrater from php to pdf by uning this labrary mPDF
+https://vgeneratepdf.herokuapp.com/
+=======
 <h1 align="center">Welcome to Generate pdf form 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
@@ -35,3 +39,4 @@
 
 
 
+>>>>>>> dae636ff328f2f2886b2914137dc45283fe56451

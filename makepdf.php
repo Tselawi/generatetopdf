@@ -26,7 +26,7 @@ if (isset($_POST['submit'])) {
     }
 
     // Phone validation 
-    if (preg_match("/^[+][1-9][0-9]{9,14}$/", $phone)) {
+    if (preg_match("/^[+][1-9][0-9]{9,14}$/", $phone) || preg_match("/^[+][1-9][0-9]{9,14}$/", $emergency)) {
         $count = 1;
         $phone = str_replace(['+'], '', $phone, $count);
     } else {
@@ -36,7 +36,7 @@ if (isset($_POST['submit'])) {
 
 
     // number validation
-    if (!is_numeric($emergency) || !is_numeric($member)) {
+    if (!is_numeric($member)) {
         $em = "Only numbers are allowed.";
         header("Location: index.php?error=$em");
     }
@@ -530,8 +530,8 @@ try {
     $mpdf->WriteHTML($data);
 
     // output to browser
-    // $mpdf->Output('myfile.pdf', 'D');
     $mpdf->Output("$fname-$lname" . '.pdf', 'D');
+    // $mpdf->Output();
 } catch (\Mpdf\MpdfException $e) {
     $e->getMessage();
 }
