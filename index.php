@@ -38,35 +38,35 @@
                     </select>
                 </div>
                 <div class=col-md-6>
-                    <input type="text" name="member" placeholder="membership number" class="form-control" required>
+                    <input type="number" name="member" placeholder="membership number" class="form-control" required>
                 </div>
             </div>
             <div class="mb-2">
-                <input type="date" name="date" placeholder="Birth date" class="form-control">
+                <input type="date" name="date" placeholder="Birth date" class="form-control" required>
             </div>
             <div class="mb-2">
-                <input type="file" name="fileToUpload" id="fileToUpload" class="form-control">
+                <input type="file" name="fileToUpload" id="fileToUpload" class="form-control" required>
             </div>
             <div class="mb-2">
-                <input type="text" name="nationality" placeholder="Nationality" class="form-control">
+                <input type="text" name="nationality" placeholder="Nationality" class="form-control" required>
             </div>
             <div class="mb-2">
-                <input type="text" name="address" placeholder="Current address" class="form-control">
+                <input type="text" name="address" placeholder="Current address" class="form-control" required>
             </div>
             <div class="row mb-2">
                 <div class="col-md-6">
-                    <input type="text" name="city" placeholder="City" class="form-control">
+                    <input type="text" name="city" placeholder="City" class="form-control" required>
                 </div>
                 <div class="col-md-6">
-                    <input type="text" name="country" placeholder="Country" class="form-control">
+                    <input type="text" name="country" placeholder="Country" class="form-control" required>
                 </div>
             </div>
             <div class="row mb-2">
                 <div class="col-md-6">
-                    <input type="phone" name="phone" placeholder="Mobile phone +32" class="form-control">
+                    <input type="phone" name="phone" placeholder="Mobile phone +XX" class="form-control" required>
                 </div>
                 <div class="col-md-6">
-                    <input type="text" name="emergency" placeholder="Emergency number" class="form-control">
+                    <input type="number" name="emergency" placeholder="Emergency number +XX" class="form-control" required>
                 </div>
             </div>
 
