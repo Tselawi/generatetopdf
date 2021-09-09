@@ -134,6 +134,7 @@ try {
     <div class="cover-text">
         <p class="title-header">Service Volontaire international</p>
         <h1 class="title-content">Volunteer passport</h1>
+        <p class="profile-text">Issue Date: <u>' . date("F j, Y") . '</u></p>
     </div>
     <!-- ########################## profile page one ##########################-->
 
@@ -530,7 +531,7 @@ try {
 
     // output to browser
     // $mpdf->Output('myfile.pdf', 'D');
-    $mpdf->Output();
+    $mpdf->Output("$fname-$lname" . '.pdf', 'D');
 } catch (\Mpdf\MpdfException $e) {
     $e->getMessage();
 }
