@@ -20,26 +20,26 @@ if (isset($_POST['submit'])) {
 
     // validation name & last name & nationality $ city & country
 
-    if (!preg_match("/^[a-zA-z]*$/", $fname) || !preg_match("/^[a-zA-z]*$/", $lname) || !preg_match("/^[a-zA-z]*$/", $nationality) || !preg_match("/^[a-zA-z]*$/", $country)) {
-        $em = "Only alphabets are allowed.";
-        header("Location: index.php?error=$em");
-    }
+    // if (!preg_match("/^[a-zA-z]*$/", $fname) || !preg_match("/^[a-zA-z]*$/", $lname) || !preg_match("/^[a-zA-z]*$/", $nationality) || !preg_match("/^[a-zA-z]*$/", $country)) {
+    //     $em = "Only alphabets are allowed.";
+    //     header("Location: index.php?error=$em");
+    // }
 
     // Phone validation 
-    if (preg_match("/^[+][1-9][0-9]{9,14}$/", $phone) || preg_match("/^[+][1-9][0-9]{9,14}$/", $emergency)) {
-        $count = 1;
-        $phone = str_replace(['+'], '', $phone, $count);
-    } else {
-        $em = "Enter the country code";
-        header("Location: index.php?error=$em");
-    }
+    // if (preg_match("/^[+][1-9][0-9]{9,14}$/", $phone) || preg_match("/^[+][1-9][0-9]{9,14}$/", $emergency)) {
+    //     $count = 1;
+    //     $phone = str_replace(['+'], '', $phone, $count);
+    // } else {
+    //     $em = "Enter the country code";
+    //     header("Location: index.php?error=$em");
+    // }
 
 
     // number validation
-    if (!is_numeric($member)) {
-        $em = "Only numbers are allowed.";
-        header("Location: index.php?error=$em");
-    }
+    // if (!is_numeric($member)) {
+    //     $em = "Only numbers are allowed.";
+    //     header("Location: index.php?error=$em");
+    // }
 
     // Birth date validation
 
