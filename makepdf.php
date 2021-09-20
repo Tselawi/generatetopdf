@@ -99,15 +99,21 @@ if (isset($_POST['submit'])) {
     // } else {
     //     header("Location: index.php");
 }
-
+function val($data)
+{
+    $data = trim($data); // remove unnessary spaces
+    $data = stripcslashes($data); // remove unnessary back slashes
+    $data = htmlspecialchars($data); // secruity data
+    return $data;
+}
 
 // }
-try{
-// create new PDF instance
-$mpdf = new \Mpdf\Mpdf(['mode' => 'utf-8', 'format' => [105, 148]]);
+try {
+    // create new PDF instance
+    $mpdf = new \Mpdf\Mpdf(['mode' => 'utf-8', 'format' => [105, 148]]);
 
-// book mark of pdf
-$mpdf->Bookmark('Start of the document');
+    // book mark of pdf
+    $mpdf->Bookmark('Start of the document');
 
 
     // $data = file_get_contents('content.php');
@@ -174,7 +180,7 @@ $mpdf->Bookmark('Start of the document');
                     <p class="profile-text2">Code of the issuing organization:SVI<br><sub class="tgray2">(code de l\'organisme emetteur)</sub></p>
                     <p class="profile-text2">Birth date: <u>' . $date . '</u><br><sub class="tgray2">(date de naissance)</sub></p>
                     <p class="profile-text2">Nationality: <u>' . $nationality . '</u><br><sub class="tgray2">(nationalite)</sub></p>
-                    <p class="profile-text2">Current address: <u>'. $adress . '</u><br><sub class="tgray2">(addresse actuelle)</sub></p>
+                    <p class="profile-text2">Current address: <u>' . $adress . '</u><br><sub class="tgray2">(addresse actuelle)</sub></p>
                     <p class="profile-text2">City: <u>' . $city . '</u><br><sub class="tgray2">(ville)</sub></p>
                     <p class="profile-text2">Country:<u>' . $country . '</u><br><sub class="tgray2">(pays)</sub></p>
                     <p class="profile-text2">Mobile phone: <u>' . $phone . '</u><br><sub class="tgray2">(numero de portable)</sub></p>
@@ -862,12 +868,12 @@ $mpdf->Bookmark('Start of the document');
     </body>
     ';
 
-// $mpdf->showImageErrors = true;
-$mpdf->WriteHTML($data);
+    // $mpdf->showImageErrors = true;
+    $mpdf->WriteHTML($data);
 
-// output to browser
-// $mpdf->Output('myfile.pdf', 'D');
-$mpdf->Output();
-} catch(\Mpdf\MpdfException $e){
+    // output to browser
+    // $mpdf->Output('myfile.pdf', 'D');
+    $mpdf->Output();
+} catch (\Mpdf\MpdfException $e) {
     $e->getMessage();
 }
