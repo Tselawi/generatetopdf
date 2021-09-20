@@ -104,7 +104,7 @@ function val($data)
 {
     $data = trim($data); // remove unnessary spaces
     $data = stripcslashes($data); // remove unnessary back slashes
-    $data = htmlspecialchars($data); // secruity data
+    $data = htmlspecialchars($data); // secruity data 
     return $data;
 }
 try {
