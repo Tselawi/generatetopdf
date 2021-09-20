@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +13,7 @@
 
     <title>Generate the mPDF</title>
 </head>
+
 <body>
 
     <div class="container mt-5">
@@ -21,7 +23,7 @@
 
         <form class="offset-md-3 col-md-6" method="post" action="makepdf.php" enctype="multipart/form-data">
 
-        <h1>Create your volonteer passport</h1>
+            <h1>Create your volonteer passport</h1>
             <p>Fill out the details below and the PDF will download.</p>
             <div class="row mb-2">
                 <div class="col-md-6">
@@ -33,16 +35,12 @@
             </div>
             <div class="row mb-2">
                 <div class="col-md-6">
-<<<<<<< HEAD
                     <select class="form-select" name="gender" value="<?= $gender ?? "" ?>">
                         <option selected>Choose...</option>
                         <option value="Male">Male</option>
                         <option value="Female">Female</option>
                         <option value="Others">Other</option>
                     </select>
-=======
-                        <input type="text" name="gender" placeholder="Sex" class="form-control">
->>>>>>> parent of e5f896a (add validation)
                 </div>
                 <div class=col-md-6>
                     <input type="number" name="member" value="<?= $member ?? "" ?>" placeholder="membership number" class="form-control"><?= $member ?? "" ?>
@@ -82,7 +80,6 @@
 
         </form>
     </div>
-<<<<<<< HEAD
 
     <!-- <script>
         $(document).ready(function() {
@@ -90,8 +87,6 @@
         })
     </> -->
 
-=======
-    
->>>>>>> parent of e5f896a (add validation)
 </body>
+
 </html>

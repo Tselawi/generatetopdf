@@ -99,6 +99,7 @@ if (isset($_POST['submit'])) {
     // } else {
     //     header("Location: index.php");
 }
+
 function val($data)
 {
     $data = trim($data); // remove unnessary spaces
@@ -147,16 +148,13 @@ try {
         <!-- ########################## profile page one ##########################-->
 
                     <div class="bg-container">
-                        <img src="images/01.png"  alt="SVI">
+                        <img src="images/cover-hor.png"  alt="SVI">
                     </div>
                     <div class="page-number-left">
                         <h2>2</h2>
                     </div>
                     <div class="profile-pic">
-                            <img src="images/06.png" alt="personal photo">
-                    </div>
-                    <div class="img-border">
-                        <img src="images/05.png" class="img-broder-b" alt="border img">
+                            <img src="#" alt="personal photo">
                     </div>
                     <div class="profile-details">
                         <p class="profile-text">First Name: <u>' . $fname . '</u><br><sub class="tgray">(prènom)</sub></p>
@@ -170,7 +168,7 @@ try {
                 <!-- ########################## profile page two ########################## -->
 
                 <div class="perso-info-bg">
-                    <img src="images/02.png" alt="">
+                    <img src="images/cover-hor.png" alt="">
                 </div>
                 <div class="page-number-right">
                         <h2>3</h2>
@@ -191,9 +189,9 @@ try {
                 </div>
                 <!-- ########################## Additional information ########################## -->
                 <div class="bg-container">
-                    <img src="images/01.png"  alt="SVI">
+                    <img src="images/05.png"  alt="SVI">
                 </div>
-                <div class="page-number-left">
+                <div class="page-number-right">
                         <h2>4</h2>
                 </div>
                 <div class="header-info">
@@ -208,7 +206,7 @@ try {
             <!-- ########################## Project information right ########################## -->
 
             <div class="perso-info-bg">
-                    <img src="images/02.png" alt="">
+                    <img src="images/07.png" alt="svi">
                 </div>
                 <div class="page-number-right">
                         <h2>5</h2>
@@ -230,7 +228,7 @@ try {
 
                 <!-- ########################## Project information left ########################## -->
                 <div class="bg-container">
-                    <img src="images/01.png"  alt="SVI">
+                    <img src="images/06.png"  alt="SVI">
                 </div>
                 <div class="page-number-left">
                         <h2>6</h2>
@@ -252,7 +250,7 @@ try {
                 <!-- ########################## Project information right ########################## -->
 
             <div class="perso-info-bg">
-                    <img src="images/02.png" alt="">
+                    <img src="images/07.png" alt="svi">
                 </div>
                 <div class="page-number-right">
                         <h2>7</h2>
@@ -273,7 +271,7 @@ try {
                 </div>
                  <!-- ########################## Project information left ########################## -->
                  <div class="bg-container">
-                    <img src="images/01.png"  alt="SVI">
+                    <img src="images/06.png"  alt="SVI">
                 </div>
                 <div class="page-number-left">
                         <h2>8</h2>
@@ -295,7 +293,7 @@ try {
                 <!-- ########################## Project information right ########################## -->
 
             <div class="perso-info-bg">
-                    <img src="images/02.png" alt="">
+                    <img src="images/07.png" alt="svi">
                 </div>
                 <div class="page-number-right">
                         <h2>9</h2>
@@ -316,7 +314,7 @@ try {
                 </div>
                  <!-- ########################## Project information left ########################## -->
                  <div class="bg-container">
-                    <img src="images/01.png"  alt="SVI">
+                    <img src="images/06.png"  alt="SVI">
                 </div>
                 <div class="page-number-lefttwo">
                         <h2>10</h2>
@@ -338,7 +336,7 @@ try {
                 <!-- ########################## Project information right ########################## -->
 
             <div class="perso-info-bg">
-                    <img src="images/02.png" alt="">
+                    <img src="images/07.png" alt="svi">
                 </div>
                 <div class="page-number-righttwo">
                         <h2>11</h2>
@@ -359,7 +357,7 @@ try {
                 </div>
                  <!-- ########################## Project information left ########################## -->
                  <div class="bg-container">
-                    <img src="images/01.png"  alt="SVI">
+                    <img src="images/06.png"  alt="SVI">
                 </div>
                 <div class="page-number-lefttwo">
                         <h2>12</h2>
@@ -381,7 +379,7 @@ try {
                 <!-- ########################## Project information right ########################## -->
 
             <div class="perso-info-bg">
-                    <img src="images/02.png" alt="">
+                    <img src="images/07.png" alt="svi">
                 </div>
                 <div class="page-number-righttwo">
                         <h2>13</h2>
@@ -402,7 +400,7 @@ try {
                 </div>
                  <!-- ########################## Project information left ########################## -->
                  <div class="bg-container">
-                    <img src="images/01.png"  alt="SVI">
+                    <img src="images/06.png"  alt="SVI">
                 </div>
                 <div class="page-number-lefttwo">
                         <h2>14</h2>
@@ -424,7 +422,7 @@ try {
                 <!-- ########################## Project information right ########################## -->
 
             <div class="perso-info-bg">
-                    <img src="images/02.png" alt="">
+                    <img src="images/07.png" alt="svi">
                 </div>
                 <div class="page-number-righttwo">
                         <h2>15</h2>
@@ -446,7 +444,7 @@ try {
 
                 <!-- ########################## Project information left ########################## -->
                 <div class="bg-container">
-                    <img src="images/01.png"  alt="SVI">
+                    <img src="images/06.png"  alt="SVI">
                 </div>
                 <div class="page-number-lefttwo">
                         <h2>16</h2>
@@ -454,14 +452,14 @@ try {
                   <!-- ########################## Project information right ########################## -->
 
             <div class="perso-info-bg">
-                    <img src="images/02.png" alt="">
+                    <img src="images/07.png" alt="svi">
                 </div>
                 <div class="page-number-righttwo">
                         <h2>17</h2>
                 </div>
                 <!-- ########################## Project information left ########################## -->
                 <div class="bg-container">
-                    <img src="images/01.png"  alt="SVI">
+                    <img src="images/06.png"  alt="SVI">
                 </div>
                 <div class="page-number-lefttwo">
                         <h2>18</h2>
@@ -469,7 +467,7 @@ try {
                   <!-- ########################## Project information right ########################## -->
 
             <div class="perso-info-bg">
-                    <img src="images/02.png" alt="">
+                    <img src="images/07.png" alt="svi">
                 </div>
                 <div class="page-number-righttwo">
                         <h2>19</h2>
@@ -673,184 +671,6 @@ try {
         <div class="pro-sign">
             <p class="profile-text2">Project Manager (name)<br><sub class="tgray2">(chef de projet (nom) )</sub><br>________________________</p>
             <p class="profile-text2">Signature______________<br><sub class="tgray2">(signature)</sub></p>
-        </div>
-        <!-- ########################## Project information left ########################## -->
-
-        <div class="bg-container">
-            <img src="images/06.png" alt="svi">
-        </div>
-        <div class="page-number-lefttwo">
-            <h2>14</h2>
-        </div>
-        <div class="header-project">
-            <p class="title-pro">Project informaition</p>
-        </div>
-        <div class="pro-info">
-            <p class="profile-text2">Name<br><sub class="tgray2">(nom)</sub></p>
-            <p class="profile-text2">Dates<br><sub class="tgray2">(dates)</sub></p>
-            <p class="profile-text2">Location<br><sub class="tgray2">(localisation)</sub></p>
-            <p class="profile-text2">Code<br><sub class="tgray2">(code)</sub></p>
-            <p class="profile-text2">Type<br><sub class="tgray2">(type)</sub></p>
-        </div>
-        <div class="pro-sign">
-            <p class="profile-text2">Project Manager (name)<br><sub class="tgray2">(chef de projet (nom) )</sub><br>________________________</p>
-            <p class="profile-text2">Signature______________<br><sub class="tgray2">(signature)</sub></p>
-        </div>
-        <!-- ########################## Project information right ########################## -->
-        <div class="bg-container">
-            <img src="images/07.png" alt="SVI">
-        </div>
-        <div class="page-number-righttwo">
-            <h2>15</h2>
-        </div>
-        <div class="header-project">
-            <p class="title-pro">Project informaition</p>
-        </div>
-        <div class="pro-info">
-            <p class="profile-text2">Name<br><sub class="tgray2">(nom)</sub></p>
-            <p class="profile-text2">Dates<br><sub class="tgray2">(dates)</sub></p>
-            <p class="profile-text2">Location<br><sub class="tgray2">(localisation)</sub></p>
-            <p class="profile-text2">Code<br><sub class="tgray2">(code)</sub></p>
-            <p class="profile-text2">Type<br><sub class="tgray2">(type)</sub></p>
-        </div>
-        <div class="pro-sign">
-            <p class="profile-text2">Project Manager (name)<br><sub class="tgray2">(chef de projet (nom) )</sub><br>________________________</p>
-            <p class="profile-text2">Signature______________<br><sub class="tgray2">(signature)</sub></p>
-        </div>
-        <!-- ########################## Project information left ########################## -->
-
-        <div class="bg-container">
-            <img src="images/06.png" alt="svi">
-        </div>
-        <div class="page-number-lefttwo">
-            <h2>16</h2>
-        </div>
-        <div class="header-project">
-            <p class="title-pro">Project informaition</p>
-        </div>
-        <div class="pro-info">
-            <p class="profile-text2">Name<br><sub class="tgray2">(nom)</sub></p>
-            <p class="profile-text2">Dates<br><sub class="tgray2">(dates)</sub></p>
-            <p class="profile-text2">Location<br><sub class="tgray2">(localisation)</sub></p>
-            <p class="profile-text2">Code<br><sub class="tgray2">(code)</sub></p>
-            <p class="profile-text2">Type<br><sub class="tgray2">(type)</sub></p>
-        </div>
-        <div class="pro-sign">
-            <p class="profile-text2">Project Manager (name)<br><sub class="tgray2">(chef de projet (nom) )</sub><br>________________________</p>
-            <p class="profile-text2">Signature______________<br><sub class="tgray2">(signature)</sub></p>
-        </div>
-
-        <!-- ########################## Project information right ########################## -->
-        <div class="bg-container">
-            <img src="images/07.png" alt="SVI">
-        </div>
-        <div class="page-number-righttwo">
-            <h2>17</h2>
-        </div>
-        <!-- ########################## Project information left ########################## -->
-
-        <div class="perso-info-bg">
-            <img src="images/06.png" alt="svi">
-        </div>
-        <div class="page-number-lefttwo">
-            <h2>18</h2>
-        </div>
-        <!-- ########################## Project information right ########################## -->
-        <div class="bg-container">
-            <img src="images/07.png" alt="SVI">
-        </div>
-        <div class="page-number-righttwo">
-            <h2>19</h2>
-        </div>
-        <!-- ########################## Project information left ########################## -->
-
-        <div class="perso-info-bg">
-            <img src="images/06.png" alt="svi">
-        </div>
-        <div class="page-number-lefttwo">
-            <h2>20</h2>
-        </div>
-        <!-- ########################## Project information right ########################## -->
-        <div class="bg-container">
-            <img src="images/07.png" alt="SVI">
-        </div>
-        <div class="page-number-righttwo">
-            <h2>21</h2>
-        </div>
-        <!-- ########################## Project information left ########################## -->
-
-        <div class="perso-info-bg">
-            <img src="images/22.png" alt="svi">
-        </div>
-        <div class="page-number-lefttwo">
-            <h2>22</h2>
-        </div>
-        <!-- ########################## Project information right ########################## -->
-        <div class="bg-container">
-            <img src="images/23.png" alt="SVI">
-        </div>
-        <div class="page-number-righttwo">
-            <h2>23</h2>
-        </div>
-        <!-- ########################## Project information left ########################## -->
-
-        <div class="bg-container">
-            <img src="images/22.png" alt="svi">
-        </div>
-        <div class="page-number-lefttwo">
-            <h2>24</h2>
-        </div>
-        <!-- ########################## Project information right ########################## -->
-        <div class="bg-container">
-            <img src="images/23.png" alt="SVI">
-        </div>
-        <div class="page-number-righttwo">
-            <h2>25</h2>
-        </div>
-        <!-- ########################## Project information left ########################## -->
-
-        <div class="bg-container">
-            <img src="images/22.png" alt="svi">
-        </div>
-        <div class="page-number-lefttwo">
-            <h2>26</h2>
-        </div>
-        <!-- ########################## Project information right ########################## -->
-        <div class="bg-container">
-            <img src="images/23.png" alt="SVI">
-        </div>
-        <div class="page-number-righttwo">
-            <h2>27</h2>
-        </div>
-        <!-- ########################## Project information left ########################## -->
-
-        <div class="bg-container">
-            <img src="images/22.png" alt="svi">
-        </div>
-        <div class="page-number-lefttwo">
-            <h2>28</h2>
-        </div>
-        <!-- ########################## Project information right ########################## -->
-        <div class="bg-container">
-            <img src="images/23.png" alt="SVI">
-        </div>
-        <div class="page-number-righttwo">
-            <h2>29</h2>
-        </div>
-        <!-- ########################## Project information left ########################## -->
-
-        <div class="bg-container">
-            <img src="images/22.png" alt="svi">
-        </div>
-        <div class="page-number-lefttwo">
-            <h2>30</h2>
-        </div>
-        <!-- ########################## Project information right ########################## -->
-        <div class="bg-container">
-            <img src="images/23.png" alt="SVI">
-        </div>
-        <div class="page-number-righttwo">
-            <h2>31</h2>
         </div>
         
         <!-- ########################## logo page  ########################## -->

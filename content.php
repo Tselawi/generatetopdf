@@ -91,3 +91,182 @@
         </div>
     </div>
 </div>
+
+<!-- ########################## Project information left ########################## -->
+
+<div class="bg-container">
+    <img src="images/06.png" alt="svi">
+</div>
+<div class="page-number-lefttwo">
+    <h2>14</h2>
+</div>
+<div class="header-project">
+    <p class="title-pro">Project informaition</p>
+</div>
+<div class="pro-info">
+    <p class="profile-text2">Name<br><sub class="tgray2">(nom)</sub></p>
+    <p class="profile-text2">Dates<br><sub class="tgray2">(dates)</sub></p>
+    <p class="profile-text2">Location<br><sub class="tgray2">(localisation)</sub></p>
+    <p class="profile-text2">Code<br><sub class="tgray2">(code)</sub></p>
+    <p class="profile-text2">Type<br><sub class="tgray2">(type)</sub></p>
+</div>
+<div class="pro-sign">
+    <p class="profile-text2">Project Manager (name)<br><sub class="tgray2">(chef de projet (nom) )</sub><br>________________________</p>
+    <p class="profile-text2">Signature______________<br><sub class="tgray2">(signature)</sub></p>
+</div>
+<!-- ########################## Project information right ########################## -->
+<div class="bg-container">
+    <img src="images/07.png" alt="SVI">
+</div>
+<div class="page-number-righttwo">
+    <h2>15</h2>
+</div>
+<div class="header-project">
+    <p class="title-pro">Project informaition</p>
+</div>
+<div class="pro-info">
+    <p class="profile-text2">Name<br><sub class="tgray2">(nom)</sub></p>
+    <p class="profile-text2">Dates<br><sub class="tgray2">(dates)</sub></p>
+    <p class="profile-text2">Location<br><sub class="tgray2">(localisation)</sub></p>
+    <p class="profile-text2">Code<br><sub class="tgray2">(code)</sub></p>
+    <p class="profile-text2">Type<br><sub class="tgray2">(type)</sub></p>
+</div>
+<div class="pro-sign">
+    <p class="profile-text2">Project Manager (name)<br><sub class="tgray2">(chef de projet (nom) )</sub><br>________________________</p>
+    <p class="profile-text2">Signature______________<br><sub class="tgray2">(signature)</sub></p>
+</div>
+<!-- ########################## Project information left ########################## -->
+
+<div class="bg-container">
+    <img src="images/06.png" alt="svi">
+</div>
+<div class="page-number-lefttwo">
+    <h2>16</h2>
+</div>
+<div class="header-project">
+    <p class="title-pro">Project informaition</p>
+</div>
+<div class="pro-info">
+    <p class="profile-text2">Name<br><sub class="tgray2">(nom)</sub></p>
+    <p class="profile-text2">Dates<br><sub class="tgray2">(dates)</sub></p>
+    <p class="profile-text2">Location<br><sub class="tgray2">(localisation)</sub></p>
+    <p class="profile-text2">Code<br><sub class="tgray2">(code)</sub></p>
+    <p class="profile-text2">Type<br><sub class="tgray2">(type)</sub></p>
+</div>
+<div class="pro-sign">
+    <p class="profile-text2">Project Manager (name)<br><sub class="tgray2">(chef de projet (nom) )</sub><br>________________________</p>
+    <p class="profile-text2">Signature______________<br><sub class="tgray2">(signature)</sub></p>
+</div>
+
+<!-- ########################## Project information right ########################## -->
+<div class="bg-container">
+    <img src="images/07.png" alt="SVI">
+</div>
+<div class="page-number-righttwo">
+    <h2>17</h2>
+</div>
+<!-- ########################## Project information left ########################## -->
+
+<div class="perso-info-bg">
+    <img src="images/06.png" alt="svi">
+</div>
+<div class="page-number-lefttwo">
+    <h2>18</h2>
+</div>
+<!-- ########################## Project information right ########################## -->
+<div class="bg-container">
+    <img src="images/07.png" alt="SVI">
+</div>
+<div class="page-number-righttwo">
+    <h2>19</h2>
+</div>
+<!-- ########################## Project information left ########################## -->
+
+<div class="perso-info-bg">
+    <img src="images/06.png" alt="svi">
+</div>
+<div class="page-number-lefttwo">
+    <h2>20</h2>
+</div>
+<!-- ########################## Project information right ########################## -->
+<div class="bg-container">
+    <img src="images/07.png" alt="SVI">
+</div>
+<div class="page-number-righttwo">
+    <h2>21</h2>
+</div>
+<!-- ########################## Project information left ########################## -->
+
+<div class="perso-info-bg">
+    <img src="images/22.png" alt="svi">
+</div>
+<div class="page-number-lefttwo">
+    <h2>22</h2>
+</div>
+<!-- ########################## Project information right ########################## -->
+<div class="bg-container">
+    <img src="images/23.png" alt="SVI">
+</div>
+<div class="page-number-righttwo">
+    <h2>23</h2>
+</div>
+<!-- ########################## Project information left ########################## -->
+
+<div class="bg-container">
+    <img src="images/22.png" alt="svi">
+</div>
+<div class="page-number-lefttwo">
+    <h2>24</h2>
+</div>
+<!-- ########################## Project information right ########################## -->
+<div class="bg-container">
+    <img src="images/23.png" alt="SVI">
+</div>
+<div class="page-number-righttwo">
+    <h2>25</h2>
+</div>
+<!-- ########################## Project information left ########################## -->
+
+<div class="bg-container">
+    <img src="images/22.png" alt="svi">
+</div>
+<div class="page-number-lefttwo">
+    <h2>26</h2>
+</div>
+<!-- ########################## Project information right ########################## -->
+<div class="bg-container">
+    <img src="images/23.png" alt="SVI">
+</div>
+<div class="page-number-righttwo">
+    <h2>27</h2>
+</div>
+<!-- ########################## Project information left ########################## -->
+
+<div class="bg-container">
+    <img src="images/22.png" alt="svi">
+</div>
+<div class="page-number-lefttwo">
+    <h2>28</h2>
+</div>
+<!-- ########################## Project information right ########################## -->
+<div class="bg-container">
+    <img src="images/23.png" alt="SVI">
+</div>
+<div class="page-number-righttwo">
+    <h2>29</h2>
+</div>
+<!-- ########################## Project information left ########################## -->
+
+<div class="bg-container">
+    <img src="images/22.png" alt="svi">
+</div>
+<div class="page-number-lefttwo">
+    <h2>30</h2>
+</div>
+<!-- ########################## Project information right ########################## -->
+<div class="bg-container">
+    <img src="images/23.png" alt="SVI">
+</div>
+<div class="page-number-righttwo">
+    <h2>31</h2>
+</div>
