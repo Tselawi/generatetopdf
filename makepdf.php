@@ -100,19 +100,14 @@ if (isset($_POST['submit'])) {
     //     header("Location: index.php");
 }
 
-function val($data)
-{
-    $data = trim($data); // remove unnessary spaces
-    $data = stripcslashes($data); // remove unnessary back slashes
-    $data = htmlspecialchars($data); // secruity data 
-    return $data;
-}
-try {
-    // create new PDF instance
-    $mpdf = new \Mpdf\Mpdf(['mode' => 'utf-8', 'format' => [105, 148]]);
 
-    // book mark of pdf
-    $mpdf->Bookmark('Start of the document');
+// }
+try{
+// create new PDF instance
+$mpdf = new \Mpdf\Mpdf(['mode' => 'utf-8', 'format' => [105, 148]]);
+
+// book mark of pdf
+$mpdf->Bookmark('Start of the document');
 
 
     // $data = file_get_contents('content.php');
@@ -143,14 +138,340 @@ try {
             <div class="issue-date">
                 <p class="profile-text">Date of Issue: <u>' . date("F j, Y") . '</u><br><sub class="tgray">(date d\'émission)</sub></p>
             </div>
-        </div>
-        
-        <!-- ########################## Main information ########################## -->
-        <div class="bg-container">
-                <img src="images/04.png" alt="SVI">
-        </div>
-            <div class="page-number-left">
-                <h2>4</h2>
+        <!-- ########################## profile page one ##########################-->
+
+                    <div class="bg-container">
+                        <img src="images/01.png"  alt="SVI">
+                    </div>
+                    <div class="page-number-left">
+                        <h2>2</h2>
+                    </div>
+                    <div class="profile-pic">
+                            <img src="images/06.png" alt="personal photo">
+                    </div>
+                    <div class="img-border">
+                        <img src="images/05.png" class="img-broder-b" alt="border img">
+                    </div>
+                    <div class="profile-details">
+                        <p class="profile-text">First Name: <u>' . $fname . '</u><br><sub class="tgray">(prènom)</sub></p>
+                        <p class="profile-text">Last Name: <u>' . $lname . '</u><br><sub class="tgray">(nom)</sub></p>
+                        <p class="profile-text">Membership Number: <u>' . $member . '</u><br><sub class="tgray">(numero de membre)</sub></p>
+                    </div>
+                    <div class="sign">
+                        <p class="profile-text">Signature____________<br><sub class="tgray">(signature)</sub></p>
+                    </div>
+
+                <!-- ########################## profile page two ########################## -->
+
+                <div class="perso-info-bg">
+                    <img src="images/02.png" alt="">
+                </div>
+                <div class="page-number-right">
+                        <h2>3</h2>
+                </div>
+                <div class="SVI-heading">
+                    <p class="profile-text2">Authority:SVI<br><sub class="tgray2">(autorite)</sub></p>
+                    <p class="profile-text2">Code of the issuing organization:SVI<br><sub class="tgray2">(code de l\'organisme emetteur)</sub></p>
+                    <p class="profile-text2">Birth date: <u>' . $date . '</u><br><sub class="tgray2">(date de naissance)</sub></p>
+                    <p class="profile-text2">Nationality: <u>' . $nationality . '</u><br><sub class="tgray2">(nationalite)</sub></p>
+                    <p class="profile-text2">Current address: <u>'. $adress . '</u><br><sub class="tgray2">(addresse actuelle)</sub></p>
+                    <p class="profile-text2">City: <u>' . $city . '</u><br><sub class="tgray2">(ville)</sub></p>
+                    <p class="profile-text2">Country:<u>' . $country . '</u><br><sub class="tgray2">(pays)</sub></p>
+                    <p class="profile-text2">Mobile phone: <u>' . $phone . '</u><br><sub class="tgray2">(numero de portable)</sub></p>
+                    <p class="profile-text2">Emergency number: <u>' . $emergency . '</u><br><sub class="tgray2">(numero d\'urgence)</sub></p>
+                </div>
+                <div class="gender">
+                    <p class="profile-text2">Sex: <u>' . $gender . '</u><br><sub class="tgray2">(sexe)</sub></p>
+                </div>
+                <!-- ########################## Additional information ########################## -->
+                <div class="bg-container">
+                    <img src="images/01.png"  alt="SVI">
+                </div>
+                <div class="page-number-left">
+                        <h2>4</h2>
+                </div>
+                <div class="header-info">
+                    <p class="title-add">Additional information</p>
+                </div>
+                <div class="SVI-additonal-info">
+                    <p class="profile-text3">Insurance number<br><sub class="tgray2">(numero d\'assurance)</sub></p>
+                    <p class="profile-text3">Health problems<br><sub class="tgray2">(problemes de sante)</sub></p>
+                    <p class="profile-text3">Extra information<br><sub class="tgray2">(informations supplementaires)</sub></p>
+                </div>
+
+            <!-- ########################## Project information right ########################## -->
+
+            <div class="perso-info-bg">
+                    <img src="images/02.png" alt="">
+                </div>
+                <div class="page-number-right">
+                        <h2>5</h2>
+                </div>
+                <div class="header-project">
+                    <p class="title-pro">Project informaition</p>
+                </div>
+                <div class="pro-info">
+                    <p class="profile-text2">Name<br><sub class="tgray2">(nom)</sub></p>
+                    <p class="profile-text2">Dates<br><sub class="tgray2">(dates)</sub></p>
+                    <p class="profile-text2">Location<br><sub class="tgray2">(localisation)</sub></p>
+                    <p class="profile-text2">Code<br><sub class="tgray2">(code)</sub></p>
+                    <p class="profile-text2">Type<br><sub class="tgray2">(type)</sub></p>
+                </div>
+                <div class="pro-sign">
+                        <p class="profile-text2">Project Manager (name)<br><sub class="tgray2">(chef de projet (nom) )</sub><br>________________________</p>
+                        <p class="profile-text2">Signature______________<br><sub class="tgray2">(signature)</sub></p>
+                </div>
+
+                <!-- ########################## Project information left ########################## -->
+                <div class="bg-container">
+                    <img src="images/01.png"  alt="SVI">
+                </div>
+                <div class="page-number-left">
+                        <h2>6</h2>
+                </div>
+                <div class="header-project">
+                    <p class="title-pro">Project informaition</p>
+                </div>
+                <div class="pro-info">
+                    <p class="profile-text2">Name<br><sub class="tgray2">(nom)</sub></p>
+                    <p class="profile-text2">Dates<br><sub class="tgray2">(dates)</sub></p>
+                    <p class="profile-text2">Location<br><sub class="tgray2">(localisation)</sub></p>
+                    <p class="profile-text2">Code<br><sub class="tgray2">(code)</sub></p>
+                    <p class="profile-text2">Type<br><sub class="tgray2">(type)</sub></p>
+                </div>
+                <div class="pro-sign">
+                        <p class="profile-text2">Project Manager (name)<br><sub class="tgray2">(chef de projet (nom) )</sub><br>________________________</p>
+                        <p class="profile-text2">Signature______________<br><sub class="tgray2">(signature)</sub></p>
+                </div>
+                <!-- ########################## Project information right ########################## -->
+
+            <div class="perso-info-bg">
+                    <img src="images/02.png" alt="">
+                </div>
+                <div class="page-number-right">
+                        <h2>7</h2>
+                </div>
+                <div class="header-project">
+                    <p class="title-pro">Project informaition</p>
+                </div>
+                <div class="pro-info">
+                    <p class="profile-text2">Name<br><sub class="tgray2">(nom)</sub></p>
+                    <p class="profile-text2">Dates<br><sub class="tgray2">(dates)</sub></p>
+                    <p class="profile-text2">Location<br><sub class="tgray2">(localisation)</sub></p>
+                    <p class="profile-text2">Code<br><sub class="tgray2">(code)</sub></p>
+                    <p class="profile-text2">Type<br><sub class="tgray2">(type)</sub></p>
+                </div>
+                <div class="pro-sign">
+                        <p class="profile-text2">Project Manager (name)<br><sub class="tgray2">(chef de projet (nom) )</sub><br>________________________</p>
+                        <p class="profile-text2">Signature______________<br><sub class="tgray2">(signature)</sub></p>
+                </div>
+                 <!-- ########################## Project information left ########################## -->
+                 <div class="bg-container">
+                    <img src="images/01.png"  alt="SVI">
+                </div>
+                <div class="page-number-left">
+                        <h2>8</h2>
+                </div>
+                <div class="header-project">
+                    <p class="title-pro">Project informaition</p>
+                </div>
+                <div class="pro-info">
+                    <p class="profile-text2">Name<br><sub class="tgray2">(nom)</sub></p>
+                    <p class="profile-text2">Dates<br><sub class="tgray2">(dates)</sub></p>
+                    <p class="profile-text2">Location<br><sub class="tgray2">(localisation)</sub></p>
+                    <p class="profile-text2">Code<br><sub class="tgray2">(code)</sub></p>
+                    <p class="profile-text2">Type<br><sub class="tgray2">(type)</sub></p>
+                </div>
+                <div class="pro-sign">
+                        <p class="profile-text2">Project Manager (name)<br><sub class="tgray2">(chef de projet (nom) )</sub><br>________________________</p>
+                        <p class="profile-text2">Signature______________<br><sub class="tgray2">(signature)</sub></p>
+                </div>
+                <!-- ########################## Project information right ########################## -->
+
+            <div class="perso-info-bg">
+                    <img src="images/02.png" alt="">
+                </div>
+                <div class="page-number-right">
+                        <h2>9</h2>
+                </div>
+                <div class="header-project">
+                    <p class="title-pro">Project informaition</p>
+                </div>
+                <div class="pro-info">
+                    <p class="profile-text2">Name<br><sub class="tgray2">(nom)</sub></p>
+                    <p class="profile-text2">Dates<br><sub class="tgray2">(dates)</sub></p>
+                    <p class="profile-text2">Location<br><sub class="tgray2">(localisation)</sub></p>
+                    <p class="profile-text2">Code<br><sub class="tgray2">(code)</sub></p>
+                    <p class="profile-text2">Type<br><sub class="tgray2">(type)</sub></p>
+                </div>
+                <div class="pro-sign">
+                        <p class="profile-text2">Project Manager (name)<br><sub class="tgray2">(chef de projet (nom) )</sub><br>________________________</p>
+                        <p class="profile-text2">Signature______________<br><sub class="tgray2">(signature)</sub></p>
+                </div>
+                 <!-- ########################## Project information left ########################## -->
+                 <div class="bg-container">
+                    <img src="images/01.png"  alt="SVI">
+                </div>
+                <div class="page-number-lefttwo">
+                        <h2>10</h2>
+                </div>
+                <div class="header-project">
+                    <p class="title-pro">Project informaition</p>
+                </div>
+                <div class="pro-info">
+                    <p class="profile-text2">Name<br><sub class="tgray2">(nom)</sub></p>
+                    <p class="profile-text2">Dates<br><sub class="tgray2">(dates)</sub></p>
+                    <p class="profile-text2">Location<br><sub class="tgray2">(localisation)</sub></p>
+                    <p class="profile-text2">Code<br><sub class="tgray2">(code)</sub></p>
+                    <p class="profile-text2">Type<br><sub class="tgray2">(type)</sub></p>
+                </div>
+                <div class="pro-sign">
+                        <p class="profile-text2">Project Manager (name)<br><sub class="tgray2">(chef de projet (nom) )</sub><br>________________________</p>
+                        <p class="profile-text2">Signature______________<br><sub class="tgray2">(signature)</sub></p>
+                </div>
+                <!-- ########################## Project information right ########################## -->
+
+            <div class="perso-info-bg">
+                    <img src="images/02.png" alt="">
+                </div>
+                <div class="page-number-righttwo">
+                        <h2>11</h2>
+                </div>
+                <div class="header-project">
+                    <p class="title-pro">Project informaition</p>
+                </div>
+                <div class="pro-info">
+                    <p class="profile-text2">Name<br><sub class="tgray2">(nom)</sub></p>
+                    <p class="profile-text2">Dates<br><sub class="tgray2">(dates)</sub></p>
+                    <p class="profile-text2">Location<br><sub class="tgray2">(localisation)</sub></p>
+                    <p class="profile-text2">Code<br><sub class="tgray2">(code)</sub></p>
+                    <p class="profile-text2">Type<br><sub class="tgray2">(type)</sub></p>
+                </div>
+                <div class="pro-sign">
+                        <p class="profile-text2">Project Manager (name)<br><sub class="tgray2">(chef de projet (nom) )</sub><br>________________________</p>
+                        <p class="profile-text2">Signature______________<br><sub class="tgray2">(signature)</sub></p>
+                </div>
+                 <!-- ########################## Project information left ########################## -->
+                 <div class="bg-container">
+                    <img src="images/01.png"  alt="SVI">
+                </div>
+                <div class="page-number-lefttwo">
+                        <h2>12</h2>
+                </div>
+                <div class="header-project">
+                    <p class="title-pro">Project informaition</p>
+                </div>
+                <div class="pro-info">
+                    <p class="profile-text2">Name<br><sub class="tgray2">(nom)</sub></p>
+                    <p class="profile-text2">Dates<br><sub class="tgray2">(dates)</sub></p>
+                    <p class="profile-text2">Location<br><sub class="tgray2">(localisation)</sub></p>
+                    <p class="profile-text2">Code<br><sub class="tgray2">(code)</sub></p>
+                    <p class="profile-text2">Type<br><sub class="tgray2">(type)</sub></p>
+                </div>
+                <div class="pro-sign">
+                        <p class="profile-text2">Project Manager (name)<br><sub class="tgray2">(chef de projet (nom) )</sub><br>________________________</p>
+                        <p class="profile-text2">Signature______________<br><sub class="tgray2">(signature)</sub></p>
+                </div>
+                <!-- ########################## Project information right ########################## -->
+
+            <div class="perso-info-bg">
+                    <img src="images/02.png" alt="">
+                </div>
+                <div class="page-number-righttwo">
+                        <h2>13</h2>
+                </div>
+                <div class="header-project">
+                    <p class="title-pro">Project informaition</p>
+                </div>
+                <div class="pro-info">
+                    <p class="profile-text2">Name<br><sub class="tgray2">(nom)</sub></p>
+                    <p class="profile-text2">Dates<br><sub class="tgray2">(dates)</sub></p>
+                    <p class="profile-text2">Location<br><sub class="tgray2">(localisation)</sub></p>
+                    <p class="profile-text2">Code<br><sub class="tgray2">(code)</sub></p>
+                    <p class="profile-text2">Type<br><sub class="tgray2">(type)</sub></p>
+                </div>
+                <div class="pro-sign">
+                        <p class="profile-text2">Project Manager (name)<br><sub class="tgray2">(chef de projet (nom) )</sub><br>________________________</p>
+                        <p class="profile-text2">Signature______________<br><sub class="tgray2">(signature)</sub></p>
+                </div>
+                 <!-- ########################## Project information left ########################## -->
+                 <div class="bg-container">
+                    <img src="images/01.png"  alt="SVI">
+                </div>
+                <div class="page-number-lefttwo">
+                        <h2>14</h2>
+                </div>
+                <div class="header-project">
+                    <p class="title-pro">Project informaition</p>
+                </div>
+                <div class="pro-info">
+                    <p class="profile-text2">Name<br><sub class="tgray2">(nom)</sub></p>
+                    <p class="profile-text2">Dates<br><sub class="tgray2">(dates)</sub></p>
+                    <p class="profile-text2">Location<br><sub class="tgray2">(localisation)</sub></p>
+                    <p class="profile-text2">Code<br><sub class="tgray2">(code)</sub></p>
+                    <p class="profile-text2">Type<br><sub class="tgray2">(type)</sub></p>
+                </div>
+                <div class="pro-sign">
+                        <p class="profile-text2">Project Manager (name)<br><sub class="tgray2">(chef de projet (nom) )</sub><br>________________________</p>
+                        <p class="profile-text2">Signature______________<br><sub class="tgray2">(signature)</sub></p>
+                </div>
+                <!-- ########################## Project information right ########################## -->
+
+            <div class="perso-info-bg">
+                    <img src="images/02.png" alt="">
+                </div>
+                <div class="page-number-righttwo">
+                        <h2>15</h2>
+                </div>
+                <div class="header-project">
+                    <p class="title-pro">Project informaition</p>
+                </div>
+                <div class="pro-info">
+                    <p class="profile-text2">Name<br><sub class="tgray2">(nom)</sub></p>
+                    <p class="profile-text2">Dates<br><sub class="tgray2">(dates)</sub></p>
+                    <p class="profile-text2">Location<br><sub class="tgray2">(localisation)</sub></p>
+                    <p class="profile-text2">Code<br><sub class="tgray2">(code)</sub></p>
+                    <p class="profile-text2">Type<br><sub class="tgray2">(type)</sub></p>
+                </div>
+                <div class="pro-sign">
+                        <p class="profile-text2">Project Manager (name)<br><sub class="tgray2">(chef de projet (nom) )</sub><br>________________________</p>
+                        <p class="profile-text2">Signature______________<br><sub class="tgray2">(signature)</sub></p>
+                </div>
+
+                <!-- ########################## Project information left ########################## -->
+                <div class="bg-container">
+                    <img src="images/01.png"  alt="SVI">
+                </div>
+                <div class="page-number-lefttwo">
+                        <h2>16</h2>
+                </div>
+                  <!-- ########################## Project information right ########################## -->
+
+            <div class="perso-info-bg">
+                    <img src="images/02.png" alt="">
+                </div>
+                <div class="page-number-righttwo">
+                        <h2>17</h2>
+                </div>
+                <!-- ########################## Project information left ########################## -->
+                <div class="bg-container">
+                    <img src="images/01.png"  alt="SVI">
+                </div>
+                <div class="page-number-lefttwo">
+                        <h2>18</h2>
+                </div>
+                  <!-- ########################## Project information right ########################## -->
+
+            <div class="perso-info-bg">
+                    <img src="images/02.png" alt="">
+                </div>
+                <div class="page-number-righttwo">
+                        <h2>19</h2>
+                </div>
+
+                <!-- ########################## address page ########################## -->
+            <div class="cover-bg">
+                <img src="images/03.png" alt="SVI">
             </div>
             <div class="header-info">
             <p class="title-add">Main information</p>
@@ -541,13 +862,12 @@ try {
     </body>
     ';
 
-    // $mpdf->showImageErrors = true;
+// $mpdf->showImageErrors = true;
+$mpdf->WriteHTML($data);
 
-    $mpdf->WriteHTML($data);
-    $mpdf->WriteFixedPosHTML($data, 98, 102, 50, 90, 'auto');
-    // output to browser
-    // $mpdf->Output("$fname-$lname" . '.pdf', 'D');
-    $mpdf->Output();
-} catch (\Mpdf\MpdfException $e) {
+// output to browser
+// $mpdf->Output('myfile.pdf', 'D');
+$mpdf->Output();
+} catch(\Mpdf\MpdfException $e){
     $e->getMessage();
 }
