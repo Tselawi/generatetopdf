@@ -8,35 +8,32 @@ body {
 .content {
   padding: 1px;
   text-align: center;
-  background-color: #F92326;
+  background-color: cmyk(0, 67%, 71%, 10%);
   width: 100%;
   height: 100%; }
 
 .title {
   font-family: sans-serif;
   /* padding-top: 15px; */
-  color: #fff;
-  font-size: 2.8rem;
+  color: cmyk(0, 0, 0, 0);
+  font-size: 2.6rem;
   text-transform: uppercase;
   font-weight: bold; }
 
-.text {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #fff;
-  font-size: 2rem;
-  margin-top: 20px; }
-
 .footer-content {
-  padding-top: 105%;
+  padding-top: 90%;
   text-align: center;
-  background-color: #F92326;
+  background-color: cmyk(0, 67%, 71%, 10%);
   width: 100%;
   height: 100%; }
 
 .text-footer {
-  font-size: 1.4rem;
-  color: #fff;
+  font-size: 1.6rem;
+  color: cmyk(0, 0, 0, 0);
   padding-top: -10px; }
+
+.logo-footer {
+  width: 60%; }
 
 /* second-page */
 .cover-bg {
@@ -50,61 +47,78 @@ body {
   text-align: center;
   width: 100%; }
 
+.issue-date {
+  padding-top: 38%;
+  text-align: start;
+  margin-left: 20%; }
+
 .title-header {
   padding: 40px 10px 30px 10px;
-  color: #F82326;
+  color: cmyk(0, 59%, 68%, 8%);
   font-size: 1.2rem;
-  text-transform: uppercase;
-  font-weight: bold; }
+  text-transform: uppercase; }
 
 .title-content {
-  font-size: 2.7rem;
-  color: #000;
+  font-size: 2.4rem;
+  color: cmyk(0, 0, 0, 100);
   padding: 20px;
   text-transform: uppercase; }
 
+.last-page-address {
+  position: absolute;
+  z-index: 2;
+  padding-left: 13%;
+  padding-top: 5%;
+  top: 0;
+  left: 0; }
+
 .newsletter {
   position: absolute;
-  top: 4%;
-  left: 25px;
-  width: 35%;
-  z-index: 1; }
+  top: 0;
+  left: 0;
+  width: 40%;
+  z-index: 1;
+  padding-bottom: -10px; }
 
 .cover-text1 {
   position: absolute;
   z-index: 1;
-  top: 6%;
-  text-align: center;
-  width: 100%; }
+  top: 0;
+  width: 100%;
+  padding-bottom: -10px; }
+
+.last-header {
+  color: cmyk(0, 59%, 68%, 8%);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: start; }
 
 .address-container {
   position: absolute;
   z-index: 1;
-  top: 22%;
-  left: 25px;
-  font-size: .9rem; }
+  top: 0px;
+  left: 0;
+  font-size: 11.8px; }
 
 .address-content {
-  padding-bottom: 5px;
-  padding-top: -18px; }
+  padding-bottom: -19px; }
 
 .red-line {
-  height: 1px;
-  width: 90%;
-  color: #F82326;
-  text-align: start;
-  padding-top: 5px; }
+  height: 2px;
+  width: 80%;
+  color: cmyk(0, 59%, 68%, 8%);
+  text-align: start; }
 
 .bg-container {
   position: relative;
-  z-index: -1; }
+  z-index: -5; }
 
 .page-number-left {
   position: absolute;
   z-index: 1;
   top: -15px;
   left: 15px;
-  color: #fff;
+  color: cmyk(0, 0, 0, 0);
   font-size: 1.4rem; }
 
 .page-number-lefttwo {
@@ -112,7 +126,7 @@ body {
   z-index: 1;
   top: -15px;
   left: 8px;
-  color: #fff;
+  color: cmyk(0, 0, 0, 0);
   font-size: 1.3rem;
   width: 15%; }
 
@@ -144,11 +158,11 @@ body {
   padding: 30px; }
 
 .profile-text {
-  font-size: 1.1rem;
+  font-size: 1rem;
   padding-bottom: 20px; }
   .profile-text .tgray {
-    color: #919396;
-    font-size: .9rem; }
+    color: cmyk(0, 0, 0, 50%);
+    font-size: .8rem; }
 
 .sign {
   position: absolute;
@@ -165,7 +179,7 @@ body {
   z-index: 1;
   top: -15px;
   right: 20px;
-  color: #fff;
+  color: cmyk(0, 0, 0, 0);
   font-size: 1.4rem; }
 
 .page-number-righttwo {
@@ -173,21 +187,24 @@ body {
   z-index: 1;
   top: -15px;
   right: -8px;
-  color: #fff;
+  color: cmyk(0, 0, 0, 0);
   font-size: 1.3rem;
   width: 15%; }
 
 .SVI-heading {
   position: absolute;
   z-index: 1;
-  top: 8%;
-  left: 10%; }
+  bottom: 0;
+  left: 50;
+  top: 120;
+  right: 0;
+  border: 1px solid black; }
 
 .profile-text2 {
   font-size: 1rem;
   padding-bottom: 12px; }
   .profile-text2 .tgray2 {
-    color: #919396;
+    color: cmyk(0, 0, 0, 50%);
     font-size: .9rem; }
 
 .gender {
@@ -216,7 +233,7 @@ body {
   padding-bottom: 20px;
   font-size: 1.1rem; }
   .profile-text3 .tgray2 {
-    color: #919396;
+    color: cmyk(0, 0, 0, 50%);
     font-size: .9rem; }
 
 .header-project {

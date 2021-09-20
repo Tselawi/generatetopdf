@@ -1,14 +1,16 @@
 .bg-container {
     position: relative;
-    z-index: -1;
+    z-index: -5;
 }
+
+
 
 .page-number-left {
     position: absolute;
     z-index: 1;
     top: -15px;
     left: 15px;
-    color: #fff;
+    color: $white-color;
     font-size: 1.4rem;
 }
 
@@ -17,7 +19,7 @@
     z-index: 1;
     top: -15px;
     left: 8px;
-    color: #fff;
+    color: $white-color;
     font-size: 1.3rem;
     width: 15%;
 }
@@ -57,12 +59,12 @@
 }
 
 .profile-text {
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding-bottom: 20px;
 
     .tgray {
         color: $text-profile;
-        font-size: .9rem;
+        font-size: .8rem;
     }
 }
 

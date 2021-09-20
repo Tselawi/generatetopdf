@@ -8,7 +8,7 @@
     z-index: 1;
     top: -15px;
     right: 20px;
-    color: #fff;
+    color: $white-color;
     font-size: 1.4rem;
 }
 
@@ -17,7 +17,7 @@
     z-index: 1;
     top: -15px;
     right: -8px;
-    color: #fff;
+    color: $white-color;
     font-size: 1.3rem;
     width: 15%;
 }
@@ -26,8 +26,11 @@
 .SVI-heading {
     position: absolute;
     z-index: 1;
-    top: 8%;
-    left: 10%;
+    bottom: 0;
+    left: 50;
+    top: 120;
+    right: 0;
+    border: 1px solid black;
 }
 
 .profile-text2 {
@@ -37,6 +40,7 @@
     .tgray2 {
         color: $text-profile;
         font-size: .9rem;
+
     }
 }
 

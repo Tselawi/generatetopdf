@@ -13,56 +13,75 @@
     width: 100%;
 }
 
+.issue-date {
+    padding-top: 38%;
+    text-align: start;
+    margin-left: 20%;
+}
+
 .title-header {
     padding: 40px 10px 30px 10px;
     color: $header-color;
     font-size: 1.2rem;
     text-transform: uppercase;
-    font-weight: bold;
 }
 
 .title-content {
-    font-size: 2.7rem;
-    color: #000;
+    font-size: 2.4rem;
+    color: $black-color;
     padding: 20px;
     text-transform: uppercase;
 }
 
 // last page
+.last-page-address {
+    position: absolute;
+    z-index: 2;
+    padding-left: 13%;
+    padding-top: 5%;
+    top: 0;
+    left: 0;
+}
 
 .newsletter {
     position: absolute;
-    top: 4%;
-    left: 25px;
-    width: 35%;
+    top: 0;
+    left: 0;
+    width: 40%;
     z-index: 1;
+    padding-bottom: -10px;
 }
 
 .cover-text1 {
     position: absolute;
     z-index: 1;
-    top: 6%;
-    text-align: center;
+    top: 0;
     width: 100%;
+    padding-bottom: -10px;
+}
+
+.last-header {
+    color: $header-color;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: start;
 }
 
 .address-container {
     position: absolute;
     z-index: 1;
-    top: 22%;
-    left: 25px;
-    font-size: .9rem;
+    top: 0px;
+    left: 0;
+    font-size: 11.8px;
 }
 
 .address-content {
-    padding-bottom: 5px;
-    padding-top: -18px;
+    padding-bottom: -19px;
 }
 
 .red-line {
-    height: 1px;
-    width: 90%;
+    height: 2px;
+    width: 80%;
     color: $header-color;
     text-align: start;
-    padding-top: 5px;
 }
