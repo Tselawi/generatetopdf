@@ -50,7 +50,7 @@
                 <input type="date" name="date" placeholder="Birth date" class="form-control" value="<?= $date ?? "" ?>">
             </div>
             <div class="mb-2">
-                <input type="file" name="fileToUpload" id="fileToUpload" class="form-control">
+                <input type="file" name="fileToUpload" id="fileToUpload" class="form-control" required>
             </div>
             <div class="mb-2">
                 <input type="text" name="nationality" id="nationality" placeholder="Nationality" class="form-control" value="<?= $nationality ?? "" ?>"><?= $nationality ?? "" ?>
