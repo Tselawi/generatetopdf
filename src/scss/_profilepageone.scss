@@ -3,8 +3,6 @@
     z-index: -5;
 }
 
-
-
 .page-number-left {
     position: absolute;
     z-index: 1;
@@ -43,19 +41,12 @@
 
 }
 
-.img-broder-b {
-    filter: grayscale(1);
-    filter: saturate(2.2);
-}
-
 .profile-details {
     position: absolute;
     top: 40%;
     left: 5%;
     z-index: 3;
     padding: 30px;
-
-
 }
 
 .profile-text {

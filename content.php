@@ -270,3 +270,25 @@
 <div class="page-number-righttwo">
     <h2>31</h2>
 </div>
+
+
+<div class="profile-details">
+    <p class="profile-text">First Name: <u>' . $fname . '</u><br><sub class="tgray">(prènom)</sub></p>
+    <p class="profile-text">Last Name: <u>' . $lname . '</u><br><sub class="tgray">(nom)</sub></p>
+    <p class="profile-text">Membership Number: <u>' . $member . '</u><br><sub class="tgray">(numero de membre)</sub></p>
+</div>
+
+<div class="SVI-heading">
+    <p class="profile-text2">Authority:SVI<br><sub class="tgray2">(autorite)</sub></p>
+    <p class="profile-text2">Code of the issuing organization:SVI<br><sub class="tgray2">(code de l\'organisme emetteur)</sub></p>
+    <p class="profile-text2">Birth date: <u>' . $date . '</u><br><sub class="tgray2">(date de naissance)</sub></p>
+    <p class="profile-text2">Nationality: <u>' . $nationality . '</u><br><sub class="tgray2">(nationalite)</sub></p>
+    <p class="profile-text2">Current address: <u>' . $adress . '</u><br><sub class="tgray2">(addresse actuelle)</sub></p>
+    <p class="profile-text2">City: <u>' . $city . '</u><br><sub class="tgray2">(ville)</sub></p>
+    <p class="profile-text2">Country:<u>' . $country . '</u><br><sub class="tgray2">(pays)</sub></p>
+    <p class="profile-text2">Mobile phone: <u>' . $phone . '</u><br><sub class="tgray2">(numero de portable)</sub></p>
+    <p class="profile-text2">Emergency number: <u>' . $emergency . '</u><br><sub class="tgray2">(numero d\'urgence)</sub></p>
+</div>
+<div class="gender">
+    <p class="profile-text2">Sex: <u>' . $gender . '</u><br><sub class="tgray2">(sexe)</sub></p>
+</div>

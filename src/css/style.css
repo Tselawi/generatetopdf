@@ -2,35 +2,34 @@
 @page {
   margin: 0; }
 
-body {
-  font-family: Arial, Helvetica, sans-serif; }
-
 .content {
   padding: 1px;
   text-align: center;
-  background-color: cmyk(0, 67%, 71%, 10%);
+  background-color: cmyk(0, 86%, 87%, 14%);
   width: 100%;
   height: 100%; }
 
 .title {
-  font-family: sans-serif;
-  /* padding-top: 15px; */
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: cmyk(0, 0, 0, 0);
-  font-size: 2.6rem;
+  font-size: 2.9rem;
   text-transform: uppercase;
-  font-weight: bold; }
+  font-weight: bold;
+  line-height: 1.2; }
 
 .footer-content {
   padding-top: 90%;
   text-align: center;
-  background-color: cmyk(0, 67%, 71%, 10%);
+  background-color: cmyk(0, 86%, 87%, 14%);
   width: 100%;
   height: 100%; }
 
 .text-footer {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: cmyk(0, 0, 0, 0);
-  padding-top: -10px; }
+  padding-top: -10px;
+  font-weight: bold; }
 
 .logo-footer {
   width: 60%; }
@@ -53,16 +52,18 @@ body {
   margin-left: 20%; }
 
 .title-header {
-  padding: 40px 10px 30px 10px;
-  color: cmyk(0, 59%, 68%, 8%);
+  padding-top: 40px;
+  padding-bottom: 15px;
+  color: cmyk(0, 86%, 87%, 14%);
   font-size: 1.2rem;
   text-transform: uppercase; }
 
 .title-content {
-  font-size: 2.4rem;
-  color: cmyk(0, 0, 0, 100);
-  padding: 20px;
-  text-transform: uppercase; }
+  font-size: 2.8rem;
+  color: cmyk(0, 0, 0, 90%);
+  padding: 18px;
+  text-transform: uppercase;
+  font-weight: bold; }
 
 .last-page-address {
   position: absolute;
@@ -88,7 +89,7 @@ body {
   padding-bottom: -10px; }
 
 .last-header {
-  color: cmyk(0, 59%, 68%, 8%);
+  color: cmyk(0, 86%, 87%, 14%);
   font-size: 1.2rem;
   text-transform: uppercase;
   text-align: start; }
@@ -106,7 +107,7 @@ body {
 .red-line {
   height: 2px;
   width: 80%;
-  color: cmyk(0, 59%, 68%, 8%);
+  color: cmyk(0, 86%, 87%, 14%);
   text-align: start; }
 
 .bg-container {
@@ -146,10 +147,6 @@ body {
   left: 26%;
   top: 27%; }
 
-.img-broder-b {
-  filter: grayscale(1);
-  filter: saturate(2.2); }
-
 .profile-details {
   position: absolute;
   top: 40%;
@@ -186,7 +183,7 @@ body {
   position: absolute;
   z-index: 1;
   top: -15px;
-  right: -8px;
+  right: -15px;
   color: cmyk(0, 0, 0, 0);
   font-size: 1.3rem;
   width: 15%; }
@@ -194,11 +191,8 @@ body {
 .SVI-heading {
   position: absolute;
   z-index: 1;
-  bottom: 0;
   left: 50;
-  top: 120;
-  right: 0;
-  border: 1px solid black; }
+  top: 130; }
 
 .profile-text2 {
   font-size: 1rem;
@@ -216,12 +210,19 @@ body {
 .header-info {
   position: absolute;
   z-index: 1;
-  top: 12%;
-  left: 15%; }
+  top: 14%;
+  left: 28%; }
 
 .title-add {
   text-transform: uppercase;
-  font-size: 1.5rem; }
+  font-size: 1.3rem;
+  font-weight: 600; }
+
+.header-add-info {
+  position: absolute;
+  z-index: 1;
+  top: 14%;
+  left: 20%; }
 
 .SVI-additonal-info {
   position: absolute;
@@ -231,7 +232,7 @@ body {
 
 .profile-text3 {
   padding-bottom: 20px;
-  font-size: 1.1rem; }
+  font-size: 1rem; }
   .profile-text3 .tgray2 {
     color: cmyk(0, 0, 0, 50%);
     font-size: .9rem; }
@@ -239,23 +240,48 @@ body {
 .header-project {
   position: absolute;
   z-index: 3;
+  top: 10%;
+  left: 25%; }
+
+.header-greetins {
+  position: absolute;
+  z-index: 3;
   top: 13%;
-  left: 20%; }
+  left: 30%; }
 
 .title-pro {
   text-transform: uppercase;
-  font-size: 1.5rem; }
+  font-size: 1.3rem; }
+
+.greetins-page {
+  position: absolute;
+  z-index: 3;
+  top: 20%;
+  left: 0;
+  padding-left: 5%;
+  padding-right: 5%; }
+
+.text3 {
+  font-size: .9rem;
+  padding-bottom: 12px;
+  text-align: center; }
+  .text3 .tgray2 {
+    color: cmyk(0, 0, 0, 50%);
+    font-size: .8rem; }
 
 .pro-info {
   position: absolute;
   z-index: 3;
-  top: 24%;
-  left: 11%; }
+  top: 20%;
+  left: 14%; }
 
 .pro-sign {
   position: absolute;
   bottom: 10%;
   right: 15%;
   z-index: 3; }
+
+td {
+  color: cmyk(0, 0, 0, 90%); }
 
 /*# sourceMappingURL=style.css.map */

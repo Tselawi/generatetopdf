@@ -1,14 +1,21 @@
 .header-info {
     position: absolute;
     z-index: 1;
-    top: 12%;
-    left: 15%;
-
+    top: 14%;
+    left: 28%;
 }
 
 .title-add {
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.header-add-info {
+    position: absolute;
+    z-index: 1;
+    top: 14%;
+    left: 20%;
 }
 
 .SVI-additonal-info {
@@ -20,7 +27,7 @@
 
 .profile-text3 {
     padding-bottom: 20px;
-    font-size: 1.1rem;
+    font-size: 1rem;
 
     .tgray2 {
         color: $text-profile;

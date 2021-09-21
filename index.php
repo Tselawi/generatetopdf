@@ -75,7 +75,7 @@
                 </div>
             </div>
 
-            <button type="submit" class="btn btn-success btn-lg form-control">Create PDF</button>
+            <button type="submit" name="submit" class="btn btn-success btn-lg form-control">Create PDF</button>
 
 
         </form>
