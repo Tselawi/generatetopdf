@@ -5,33 +5,20 @@ use Mpdf\Mpdf;
 require_once __DIR__ . '/vendor/autoload.php';
 
 // Grab the variables
-// if (isset($_POST['submit'])) {
-//     // require_once 'db_conn.php';
-//     $fname = val($_POST['fname']);
-//     $lname = val($_POST['lname']);
-//     $gender = val($_POST['gender']);
-//     $member = val($_POST['member']);
-//     $date = val($_POST['date']);
-//     $nationality = val($_POST['nationality']);
-//     $adress = val($_POST['address']);
-//     $city = val($_POST['city']);
-//     $country = val($_POST['country']);
-//     $phone = val($_POST['phone']);
-//     $emergency = val($_POST['emergency']);
-
 if (isset($_POST['submit'])) {
     // require_once 'db_conn.php';
-    $fname = $_POST['fname'];
-    $lname = $_POST['lname'];
-    $gender = $_POST['gender'];
-    $member = $_POST['member'];
-    $date = $_POST['date'];
-    $nationality = $_POST['nationality'];
-    $adress = $_POST['address'];
-    $city = $_POST['city'];
-    $country = $_POST['country'];
-    $phone = $_POST['phone'];
-    $emergency = $_POST['emergency'];
+    $fname = val($_POST['fname']);
+    $lname = val($_POST['lname']);
+    $gender = val($_POST['gender']);
+    $member = val($_POST['member']);
+    $date = val($_POST['date']);
+    $nationality = val($_POST['nationality']);
+    $adress = val($_POST['address']);
+    $city = val($_POST['city']);
+    $country = val($_POST['country']);
+    $phone = val($_POST['phone']);
+    $emergency = val($_POST['emergency']);
+
 
     // validation name & last name & nationality $ city & country
 
