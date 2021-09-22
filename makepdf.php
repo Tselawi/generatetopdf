@@ -222,7 +222,7 @@ try {
         <p class="title-header">Service Volontaire international</p>
         <h1 class="title-content">International Volunteer passport</h1>
         <div class="issue-date">
-            <p class="profile-text2">Date of Issue <u>' . date("F j, Y") . '</u><br><sub class="tgray2">(date d\'émission)</sub></p>
+            <p class="profile-text2">Date of Issue ' . date("F j, Y") . '<br><sub class="tgray2">(date d\'émission)</sub></p>
         </div>
     </div>
     <!-- ########################## profile page one ##########################-->
@@ -237,11 +237,11 @@ try {
             </tr>
             <br><br>
             <tr>
-                <td><p>Authority:SVI<br><sub style="color: gray; font-size:0.8rem;">(autorite)</sub></p></td>
+                <td><p>Authority: Service Volunteers international<br><sub style="color: gray; font-size:0.8rem;">(autorite)</sub></p></td>
             </tr>
             <br>
             <tr>
-                <td><p>Code of the issuing organization:SVI<br><sub style="color: gray; font-size:0.8rem;">(code de l\'organisme emetteur)</sub></p></td>
+                <td><p>Code of the issuing organization:Se<br><sub style="color: gray; font-size:0.8rem;">(code de l\'organisme emetteur)</sub></p></td>
             </tr> 
             <br><br><br><br>
             <tr>   
@@ -278,20 +278,20 @@ try {
                 <td>
                     <table style="padding-left:2%; line-height: 1.5">
                         <tr>
-                            <td>First Name <u>' . $fname . '</u><br><sub style="color: gray; font-size:0.8rem;">(prènom)</sub></td>
+                            <td>First Name ' . $fname . '<br><sub style="color: gray; font-size:0.8rem;">(prènom)</sub></td>
                         </tr>
                         <tr>
-                            <td>Last Name <u>' . $lname . '</u><br><sub style="color: gray; font-size:0.8rem;">(nom)</sub></td>
+                            <td>Last Name ' . $lname . '<br><sub style="color: gray; font-size:0.8rem;">(nom)</sub></td>
                         </tr>
                         <tr>
-                            <td>Volunteer ID <u>' . $member . '</u><br><sub style="color: gray; font-size:0.8rem;">(ID volontaire)</sub></td>
+                            <td>Volunteer ID ' . $member . '<br><sub style="color: gray; font-size:0.8rem;">(ID volontaire)</sub></td>
                         </tr>
                         <tr>
-                            <td>Birth date <u>' . $date . '</u><br><sub style="color: gray; font-size:0.8rem;">(date de naissance)</sub></td>
+                            <td>Birth date ' . $date . '<br><sub style="color: gray; font-size:0.8rem;">(date de naissance)</sub></td>
                             <td style="padding-left:4%;">Sex <u>' . $gender . '</u><br><sub style="color: gray; font-size:0.8rem;" >(sexe)</sub></td>
                         </tr>
                         <tr>
-                            <td>Nationality <u>' . $nationality . '</u><br><sub style="color: gray; font-size:0.8rem;">(nationalité)</sub></td>
+                            <td>Nationality ' . $nationality . '<br><sub style="color: gray; font-size:0.8rem;">(nationalité)</sub></td>
                         </tr>
                     </table>
                     <br><br>
@@ -319,11 +319,11 @@ try {
         <p class="title-add">Main information</p>
     </div>
     <div class="svi-heading">
-        <p class="profile-text2">Current address: <u></u><br><sub class="tgray2">(addresse actuelle)</sub></p>
-        <p class="profile-text2">City: <u></u><br><sub class="tgray2">(ville)</sub></p>
-        <p class="profile-text2">Country:<u></u><br><sub class="tgray2">(pays)</sub></p>
-        <p class="profile-text2">Mobile phone: <u></u><br><sub class="tgray2">(numero de portable)</sub></p>
-        <p class="profile-text2">Emergency number: <u></u><br><sub class="tgray2">(numero d\'urgence)</sub></p>
+        <p class="profile-text2">Current address ' . $adress . '<br><sub class="tgray2">(addresse actuelle)</sub></p>
+        <p class="profile-text2">City ' . $city . '<br><sub class="tgray2">(ville)</sub></p>
+        <p class="profile-text2">Country ' . $country . '<br><sub class="tgray2">(pays)</sub></p>
+        <p class="profile-text2">Mobile phone ' . $phone . '<br><sub class="tgray2">(numero de portable)</sub></p>
+        <p class="profile-text2">Emergency number ' . $emergency . ' <br><sub class="tgray2">(numero d\'urgence)</sub></p>
     </div>
 
     <!-- ########################## Additional information ########################## -->
