@@ -194,7 +194,7 @@ try {
     <div class="container">
         <div class="content">
             <h1 class="title" style="font-family: gothic">International Volunteer Passport</h1>
-            <img src="images/svi-circle-whitel.svg" width="55%" alt="big-logo" />
+            <img src="images/SVI-circle-whitel.svg" width="55%" alt="big-logo" />
         </div>
     </div>
     <!-- ########################## logo page  ########################## -->
@@ -893,7 +893,7 @@ try {
     </div>
     <!-- ########################## last page ########################## -->
     <div class="footer-content">
-        <img src="images/svi-long-blanc.svg" width="56%" alt="big-logo" />
+        <img src="images/SVI-long-blanc.svg" width="56%" alt="big-logo" />
         <div class="footer-container">
             <p class="text-footer">+32 2 888 67 13</p>
         </div>
