@@ -194,7 +194,7 @@ try {
     <div class="container">
         <div class="content">
             <h1 class="title" style="font-family: gothic">International Volunteer Passport</h1>
-            <img src="images/SVI-circle-whitel.svg" width="55%" alt="big-logo" />
+            <img src="images/svi-circle-white.svg" width="55%" alt="big-logo" />
         </div>
     </div>
     <!-- ########################## logo page  ########################## -->
